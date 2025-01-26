@@ -112,10 +112,7 @@
             <label>Tiêu chí căn nhà</label><br>
             <input type="checkbox" id="hxh" name="check5345box3"><label for="check5345box3">Hẻm xe hơi</label><br>
             <input type="checkbox" id="shr" name="checwetrtkbox3"><label for="checwetrtkbox3">Sổ hồng riêng</label><br>
-            <input type="checkbox" id="ntd" name="checgdfkbox3"><label for="checgdfkbox3">Nội thất đẹp</label><br>
-            <input type="checkbox" id="sv" name="check35345324box3"><label for="check35345324box3">Sân vườn</label><br>
             <input type="checkbox" id="btct" name="chebxcvckbox3"><label for="chebxcvckbox3">Bê tông cốt thép</label><br>
-            <input type="checkbox" id="an" name="check4324324box3"><label for="check4324324box3">An ninh</label><br>
             <input type="checkbox" id="trungtam" name="gdfg"><label for="gdfg">Gần quận 1, 4, 8, khu vực xung
                 quanh</label><br>
             <br>
@@ -331,11 +328,8 @@
 
                 var hxh = $("#hxh").is(":checked") ? 'hxh' : '';
                 var shr = $("#shr").is(":checked") ? 'shr' : '';
-                var ntd = $("#ntd").is(":checked") ? 'ntd' : '';
-                var sv = $("#sv").is(":checked") ? 'sv' : '';
                 var bc = $("#bc").is(":checked") ? 'bc' : '';
                 var btct = $("#btct").is(":checked") ? 'btct' : '';
-                var an = $("#an").is(":checked") ? 'an' : '';
                 var trungtam = $("#trungtam").is(":checked") ? 'trungtam' : '';
 
                 var tin = '';
@@ -547,6 +541,9 @@
                  var listdt = [
                  "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, sân thượng"
                  , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân thượng"
+                 , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân vườn"
+                 , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn"
+                 , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn rộng thoáng"
                  ]
 
               
@@ -566,8 +563,7 @@
                     var listhxh = [
                         '-- Xe hơi tới nơi.',
                         '-- Xe hơi tới cửa.',
-                        '-- Xe hơi đỗ cửa.',
-                        '-- Xe hơi đỗ trước cửa.'
+                        '-- Hẻm Xe hơi.',
                     ];
                     randomNumber = Math.floor(Math.random() * listhxh.length);
                     hxh = listhxh[randomNumber];
@@ -575,44 +571,7 @@
                     tin += hxh;
                 }
 
-                if (ntd) {
-                    var listnt = [
-                        '-- Nội thất: toàn sản phẩm cao cấp.',
-                        '-- Nội thất đẹp, cao cấp.',
-                        '-- Nội thất đẹp, chất lượng.',
-                        '-- Nội thất đầy đủ.',
-                        '-- Nội thất tuyệt đẹp, sang trọng.',
-                        '-- Tặng toàn bộ nội thất cao cấp'
-                    ];
-                    randomNumber = Math.floor(Math.random() * listnt.length);
-                    ntd = listnt[randomNumber];
-                    tin += "\n";
-                    tin += ntd;
-                }
-
-                if (sv) {
-                    var listsv = [
-                        '-- Có sân để xe, trồng cây.',
-                        '-- Có sân để xe, trồng cây thoáng mát.',
-                        '-- Có sân để xe, trồng cây cực thoáng mát.',
-                        '-- Có sân thoáng mát để xe, trồng cây.',
-                    ];
-                    randomNumber = Math.floor(Math.random() * listsv.length);
-                    sv = listsv[randomNumber];
-                    tin += "\n";
-                    tin += sv;
-                }
-
-                if (an) {
-                    var listan = [
-                        '',
-                        ''
-                    ];
-                    randomNumber = Math.floor(Math.random() * listan.length);
-                    an = listan[randomNumber];
-                    tin += "\n";
-                    tin += an;
-                }
+              
                 //------------------------------------------------------------------------------------------------------------------------------------------------------
                 tin += "\n";
                 tin += "-- Gần " + khuvucxungquanh;
