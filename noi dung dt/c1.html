@@ -21,14 +21,12 @@
             padding: 10px;
         }
 
-        /* Clear floats after the columns */
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
 
-        /* Increase radio button size */
         .radio-container input[type="radio"] {
             transform: scale(1.5);
             margin-right: 10px;
@@ -60,16 +58,12 @@
 
         input[type="checkbox"] {
             transform: scale(1.5);
-            /* Increase the checkbox size */
             margin-right: 10px;
-            /* Add some spacing between the checkbox and label */
         }
 
         .bigger-button {
             font-size: 18px;
-            /* Increase the font size */
             padding: 10px 20px;
-            /* Increase the padding */
         }
     </style>
 </head>
@@ -111,7 +105,8 @@
             <label>Tiêu chí căn nhà</label><br>
             <input type="checkbox" id="hxh" name="check5345box3"><label for="check5345box3">Hẻm xe hơi</label><br>
             <input type="checkbox" id="shr" name="checwetrtkbox3"><label for="checwetrtkbox3">Sổ hồng riêng</label><br>
-            <input type="checkbox" id="btct" name="chebxcvckbox3"><label for="chebxcvckbox3">Bê tông cốt thép</label><br>
+            <input type="checkbox" id="btct" name="chebxcvckbox3"><label for="chebxcvckbox3">Bê tông cốt
+                thép</label><br>
             <input type="checkbox" id="trungtam" name="gdfg"><label for="gdfg">Gần quận 1, 4, 8, khu vực xung
                 quanh</label><br>
             <br>
@@ -120,10 +115,6 @@
             <div id="container"></div>
 
 
-            <br>
-
-            <label>Thông tin liên hệ</label>
-            <input type="text" class="form-control" id="thongtinlienhe" placeholder="thông tin liên hệ">
             <br>
             <button class="bigger-button" id="laytin">lấy tin</button>
             <button class="bigger-button" id="copyButton">Copy tin</button>
@@ -166,8 +157,6 @@
                     "SC VivoCity",
                     "BigC",
                     "bách hóa xanh",
-                    "chợ",
-                    "trường học",
                     "bệnh viện"
                 ],
                 [
@@ -248,6 +237,12 @@
                 "NGAY CHỢ TÂN MỸ"
                 , "GẦN PHÚ MỸ HƯNG"
                 , "GẦN KHU CHẾ XUẤT TÂN THUẬN"
+                , "DƯƠNG CÁT LỢI"
+                , "ĐẶNG NHỮ LÂM"
+                , "HUỲNH THỊ ĐỒNG"
+                , "ĐÀO TÔNG NGUYÊN"
+                , "NGUYỄN BÌNH"
+                , "NGUYỄN THỊ HƯƠNG"
                 , "GẦN QUẬN 1"
                 , "CHỢ TÂN QUY"
             ];
@@ -285,6 +280,14 @@
 
 
             $('#thongtinlienhe').val(localStorage.getItem('thong_tin_lien_he'));
+            $('#phuong').val(localStorage.getItem('phuong'));
+            $('#khuvuc').val(localStorage.getItem('khuvuc'));
+            $('#dientich').val(localStorage.getItem('dientich'));
+            $('#gia').val(localStorage.getItem('gia'));
+            $('#ngang').val(localStorage.getItem('ngang'));
+            $('#dai').val(localStorage.getItem('dai'));
+            $('#tang').val(localStorage.getItem('tang'));
+            $('#pn').val(localStorage.getItem('pn'));
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             $("#copyButton").click(function () {
@@ -300,14 +303,24 @@
 
             $("#laytin").click(function () {
                 localStorage.setItem('thong_tin_lien_he', $('#thongtinlienhe').val());
+                localStorage.setItem('phuong', $('#phuong').val());
+                localStorage.setItem('khuvuc', $('#khuvuc').val());
+                localStorage.setItem('dientich', $('#dientich').val());
+                localStorage.setItem('gia', $('#gia').val());
+                localStorage.setItem('ngang', $('#ngang').val());
+                localStorage.setItem('dai', $('#dai').val());
+                localStorage.setItem('tang', $('#tang').val());
+                localStorage.setItem('pn', $('#pn').val());
+
+
                 var loainha = $("#dropdown option:selected").text();
                 var khuvuc = $("#khuvuc option:selected").text();
                 var khuvucxungquanh = $("input[name='khuvucxungquanh']:checked").next().text();
 
                 var checkboxes = document.getElementsByName('khuvucxungquanh');
-                var checkedLabels = [];
+                var checkedLabels = ['chợ', 'trường học'];
 
-                for (var i = 0; i < checkboxes.length; i++) {
+                for (var i = 2; i < checkboxes.length; i++) {
                     var checkbox = checkboxes[i];
 
                     if (checkbox.checked) {
@@ -514,13 +527,13 @@
                 // ]
 
                 var listdt = [
-                "-- Diện tích: 999dt_m2 (999ngang_m x 999dai_m)."
+                    "-- Diện tích: 999dt_m2 (999ngang_m x 999dai_m)."
                     , "-- Diện tích: 999dt_m2 (999ngang_m ❌ 999dai_m)."
                     , "-- Diện tích: 999dt_m2 (999ngang_m * 999dai_m)."
                     , "-- Diện tích: 999dt_m2 (ngang 999ngang_m - dài 999dai_m)."
                     , "-- Diện tích: 999dt_m2 (rộng 999ngang_m _ dài 999dai_m)."
                     , "-- Diện tích: 999dt_m2 ( 999ngang_ x 999dai_)."
-                    ,"-- Diện tích: 999ngang_m x 999dai_m (999dt_m2)"
+                    , "-- Diện tích: 999ngang_m x 999dai_m (999dt_m2)"
                     , "-- Diện tích: 999ngang_m ❌ 999dai_m (999dt_m2)"
                     , "-- Diện tích: 999ngang_m * 999dai_m (999dt_m2)"
                     , "-- Diện tích: ngang 999ngang_m - dài 999dai_m (999dt_m2)"
@@ -537,15 +550,15 @@
                 tin += "\n";
                 tin += dt;
 
-                 var listdt = [
-                 "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, sân thượng"
-                 , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân thượng"
-                 , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân vườn"
-                 , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn"
-                 , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn rộng thoáng"
-                 ]
+                var listdt = [
+                    "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, sân thượng"
+                    , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân thượng"
+                    , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân vườn"
+                    , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn"
+                    , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn rộng thoáng"
+                ]
 
-              
+
                 randomNumber = Math.floor(Math.random() * listdt.length);
                 dt = listdt[randomNumber];
                 dt = dt.replace("999dt_", dientich);
@@ -570,7 +583,7 @@
                     tin += hxh;
                 }
 
-              
+
                 //------------------------------------------------------------------------------------------------------------------------------------------------------
                 tin += "\n";
                 tin += "-- Gần " + khuvucxungquanh;
@@ -613,31 +626,37 @@
                 }
                 tin += "\n";
                 var klistShr = [
-                        '☎️0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
-                        , 'LH em Công 0963.569.435 xem nhà và làm việc với chủ'
-                        , 'Call/Zalo: 0963.569.435 (Công nhà Q7)'
-                        , '☎️ Call/Zalo: 0963.569.435 (xem nhà và làm việc chính chủ)'
-                        , '📞 Call/Zalo: 0963.569.435'
-                        , '📞 0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
-                        , '📞LH e Công 0963-569-435 xem nhà và làm việc với chủ'
-                    ];
-                    randomNumber = Math.floor(Math.random() * klistShr.length);
-                    kshr = klistShr[randomNumber];
-                    tin += "\n";
-                    tin += kshr;
+                    '☎️0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
+                    , 'LH 0963.569.435 xem nhà và làm việc với chủ'
+                    , 'Phone/Zalo: 0963.569.435'
+                    , '☎️ Call/Zalo: 0963.569.435 (xem nhà và làm việc chính chủ)'
+                    , '📞 Gọi/zalo: 0963.569.435'
+                    , '📞 0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
+                    , '☎️ Call 0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
+                    , '📞LH 0963-569-435 xem nhà và làm việc với chủ'
+                ];
+                randomNumber = Math.floor(Math.random() * klistShr.length);
+                kshr = klistShr[randomNumber];
                 tin += "\n";
-        
+                tin += kshr;
+                tin += "\n";
+
                 tin += '#nhapho #bannha #bds #hcm ';
 
 
 
 
 
-                var itd = ['', '👉', '⭐️⭐️', '⭐️⭐️⭐️', '🔥', '🏠', '📍', '⭐️', '✨', '✨', '🌈', '🏘️', '🏘️🏘️', '🏘️🏘️🏘️', '💥','💥💥','💥💥💥', '🏡', '❤️', '💥', '☀️']
+                var itd = ['👉', '⭐️⭐️', '⭐️⭐️⭐️', '🔥', '🏠', '📍', '⭐️',
+                    '✨', '✨✨', '🌈', '🏘️', '🏘️🏘️', '🏘️🏘️🏘️',
+                    '💥', '💥💥', '💥💥💥',
+                    '🏡', '❤️', '💥', '☀️', '✈️✈️✈️', '✈️✈️', '✈️']
                 randomNumber = Math.floor(Math.random() * itd.length);
                 tin = tin.replace("**", itd[randomNumber]);
 
-                var ind = ['- ', '👉', '+', '🍀', '✅','🎉', '✔️', '⚡', '🔹️','💢', '🌲', '🧡', "👏" ]
+                var ind = ['- ', '👉', '+', '🍀', '✅', '🎉', '✔️', '⚡', '🔹️', '💢',
+                    '🌲', '🧡', "👏", '👌', '🌺', '❤️', '🌟', '💎', '🔥', '✈️', '🌹',
+                    '📍', '♻️', '🔺', '💥', '⭐️', '✨']
                 randomNumber = Math.floor(Math.random() * ind.length);
                 tin = tin.replaceAll("--", ind[randomNumber]);
 
@@ -645,10 +664,13 @@
                 tin = tin.replaceAll("phường TT NHÀ BÈ, Quận 7", "TT NHÀ BÈ")
                 tin = tin.replaceAll("phường TT NHÀ BÈ, Q7", "TT NHÀ BÈ")
 
+                tin = tin.replaceAll("phường PHÚ XUÂN, Quận 7", "PHÚ XUÂN, TT NHÀ BÈ")
+                tin = tin.replaceAll("phường PHÚ XUÂN, Q7", "PHÚ XUÂN, TT NHÀ BÈ")
+                tin = tin.replaceAll("phường PHÚ XUÂN, QUẬN 7", "PHÚ XUÂN, TT NHÀ BÈ")
 
 
 
-                tin +="\n\n ____________________________________________________ \n\n"
+                tin += "\n\n ____________________________________________________ \n\n\n\n\n"
                 tin += $("#myTextarea").val()
 
                 $("#myTextarea").val(tin);
