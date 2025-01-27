@@ -277,17 +277,6 @@
                 var value = "phuong" + (index + 1); // Generate value based on index
                 selectElement.append($("<option>").attr("value", value).text(option));
             });
-
-
-            $('#thongtinlienhe').val(localStorage.getItem('thong_tin_lien_he'));
-            $('#phuong').val(localStorage.getItem('phuong'));
-            $('#khuvuc').val(localStorage.getItem('khuvuc'));
-            $('#dientich').val(localStorage.getItem('dientich'));
-            $('#gia').val(localStorage.getItem('gia'));
-            $('#ngang').val(localStorage.getItem('ngang'));
-            $('#dai').val(localStorage.getItem('dai'));
-            $('#tang').val(localStorage.getItem('tang'));
-            $('#pn').val(localStorage.getItem('pn'));
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             $("#copyButton").click(function () {
@@ -302,17 +291,6 @@
             // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
             $("#laytin").click(function () {
-                localStorage.setItem('thong_tin_lien_he', $('#thongtinlienhe').val());
-                localStorage.setItem('phuong', $('#phuong').val());
-                localStorage.setItem('khuvuc', $('#khuvuc').val());
-                localStorage.setItem('dientich', $('#dientich').val());
-                localStorage.setItem('gia', $('#gia').val());
-                localStorage.setItem('ngang', $('#ngang').val());
-                localStorage.setItem('dai', $('#dai').val());
-                localStorage.setItem('tang', $('#tang').val());
-                localStorage.setItem('pn', $('#pn').val());
-
-
                 var loainha = $("#dropdown option:selected").text();
                 var khuvuc = $("#khuvuc option:selected").text();
                 var khuvucxungquanh = $("input[name='khuvucxungquanh']:checked").next().text();
@@ -382,7 +360,6 @@
                     , "**Chủ định cư Mỹ, bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
                     , "**Chủ gửi, nhà đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
                     , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà giảm chào 1ootr!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
                     , "**Nhà rộng!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Nhà đẹp thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Nhà rộng thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
@@ -404,7 +381,6 @@
                     , "**Chủ định cư Mỹ, bán gấp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Chủ gửi, nhà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà giảm chào 1ootr!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Nhà rộng!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Nhà đẹp thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Nhà rộng thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
@@ -426,7 +402,6 @@
                     , "**Chủ định cư Mỹ, bán gấp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Chủ gửi, nhà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà giảm chào 1ootr!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
                     , "**Bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
                     , "**Bán gấp!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
                     , "**Gấp bán!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
@@ -455,7 +430,6 @@
                     , "**Chủ định cư Mỹ, bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
                     , "**Chủ gửi, nhà đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
                     , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà giảm chào 1ootr!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
                     , "**Nhà rộng!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
                     , "**Nhà đẹp thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
                     , "**Nhà rộng thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
@@ -477,7 +451,6 @@
                     , "**Chủ định cư Mỹ, bán gấp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
                     , "**Chủ gửi, nhà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
                     , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà giảm chào 1ootr!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
                     , "**Nhà rộng!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
                     , "**Nhà đẹp thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
                     , "**Nhà rộng thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
@@ -499,7 +472,6 @@
                     , "**Chủ định cư Mỹ, bán gấp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
                     , "**Chủ gửi, nhà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
                     , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà giảm chào 1ootr!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
 
                 ]
 
@@ -588,22 +560,7 @@
                 tin += "\n";
                 tin += "-- Gần " + khuvucxungquanh;
 
-                //-------------------------------------------------------------------------------------------------------------------------------------------------------
-                trungtam
-                if (trungtam) {
-                    var listtrungtam = [
-                        '-- Thuận tiện di chuyển vào Q1 và các quận trung tâm, thành phố Thủ Đức.'
-                        , '-- Gần Q1 và các quận trung tâm, thành phố Thủ Đức.'
-                        , '-- Thuận tiện di chuyển vào Q1, thành phố Thủ Đức.'
-                        , '-- Thuận tiện di chuyển vào Q1.'
-                        , '-- Gần Q1.'
-                        , '-- Gần Q1, thành phố Thủ Đức.'
-                    ];
-                    randomNumber = Math.floor(Math.random() * listtrungtam.length);
-                    trungtam = listtrungtam[randomNumber];
-                    tin += "\n";
-                    tin += trungtam;
-                }
+             
 
                 //---------------------------------------------------------------------------------------------------------------------------------------------------------
                 if (shr) {
