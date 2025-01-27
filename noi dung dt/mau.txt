@@ -1,9 +1,0 @@
-$('#thongtinlienhe').val(localStorage.getItem('thong_tin_lien_he'));
-            $('#phuong').val(localStorage.getItem('phuong'));
-            $('#khuvuc').val(localStorage.getItem('khuvuc'));
-            $('#dientich').val(localStorage.getItem('dientich'));
-            $('#gia').val(localStorage.getItem('gia'));
-            $('#ngang').val(localStorage.getItem('ngang'));
-            $('#dai').val(localStorage.getItem('dai'));
-            $('#tang').val(localStorage.getItem('tang'));
-            $('#pn').val(localStorage.getItem('pn'));
