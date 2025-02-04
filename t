@@ -5,7 +5,7 @@
 🏡 BÁN NHÀ 3 TẦNG HIỆN ĐẠI - HUỲNH TẤN PHÁT, TÂN PHÚ, QUẬN 7
 
 🔹 Diện tích: 6m x 15m (90m²)
-🔹 Giá bán: 6.5 tỷ (Có thương lượng)
+🔹 6.5T (Có thương lượng)
 🔹 Vị trí: Đường Huỳnh Tấn Phát, Phường Tân Phú, Quận 7, liền kề Phú Mỹ Hưng.
 
 ✨ Đặc điểm nổi bật:
@@ -17,7 +17,5 @@ Sân vườn nhỏ: Không gian xanh mát, tạo cảm giác gần gũi với th
 Vị trí đắc địa: Liền kề Phú Mỹ Hưng, khu vực sầm uất, tiện ích đầy đủ (trường học, siêu thị, bệnh viện).
 
 Giao thông thuận tiện: Dễ dàng di chuyển đến các quận trung tâm như Q1, Q4, Q8.
-
-💰 Giá bán: 6.5 tỷ (Có thương lượng cho khách thiện chí).
 
 📞 Liên hệ: 0963.569.435
