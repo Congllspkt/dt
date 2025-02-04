@@ -19,3 +19,6 @@ Vị trí đắc địa: Liền kề Phú Mỹ Hưng, khu vực sầm uất, ti�
 Giao thông thuận tiện: Dễ dàng di chuyển đến các quận trung tâm như Q1, Q4, Q8.
 
 📞 Liên hệ: 0963.569.435
+
+1
+
