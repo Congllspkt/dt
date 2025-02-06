@@ -1,3 +1,203 @@
+1 103.3A,B Đường Số 53
+,
+NHÀ ĐẸP - TẶNG FULL NỘI THẤT GỖ QUÝ - VỊ TRÍ TRUNG TÂM QUẬN 7 . ,
+,
+103/3A-3B đường số 53 84 3 8.3 10 6,5tỷ phường Tân Quy Quận 7 
+6đến9 ĐC Anh K Địa Phát , Hh 3 % Giá bán. Nguồn Đầu chủ Anh.,
+Chi tiết:,
+- DT: 8.3 x10 m, Hướng Bắc.,
+- Kết cấu: Trệt, 2 Lầu gồm 1 phòng khách, 1 bếp, 4PN, 3 WC, 1 phòng thờ, 1 sân thượng,
+- Nhà mới, xây dựng kiên cố, xách vali vào ở ngay.,
+- Hẻm trước nhà 4m,
+- Gần cư xá Ngân Hàng, Lâm Văn Bền, trường học các cấp, đầy đủ tiện ích.,
+- Khu dân cư dân trí cao, khu vực toàn nhà cao tầng,
+- Pháp lý: Sổ hồng riêng , Hoàn Công Đầy Đủ .,
+
+
+
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________
+
+2 295.2 Phạm Hữu Lầu
+295.2 Phạm Hữu Lầu 110.2 3 8 14 8.9 tỷ Phú Mỹ Quận 7 5-10 tỷ HĐ Trần Thị Thuỷ Tiên Nam Long 
+0914722866 H3GB nguồn Đầu chủ Trần Thị Thuỷ Tiên - Nam Long
+Bán nhà biệt thự 295.2 phạm hữu lầu cách xe hơi 10 m 
+
+CẠNH PHÚ MŨ HƯNG
+
+Ngang 8m dài 14m
+
+Hiện trạng : 1trệt 2 lầu 5 pn 5wc có phòng ngủ tầng trệt cho người lớn tuổi
+
+Giá chào :9.2 Tỷ
+
+Giá bán :8,9 Tỷ chốt
+
+Sổ Hồng Hoàn công chuẩn.
+
+
+
+Vị trí thu bông : https://maps.app.goo.gl/4nDmFPMMQvSKVuAs5?g_st=com.google.maps.preview.copy
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________
+
+3 308.20 (cũ 41.3A) Huỳnh Tấn Phát
+
+CHỦ BÁO TĂNG GIÁ MỚI 9,7 tỷ.
+
+
+
+27.11.2023 CHỦ GẤP BÁN GIẢM 250TR. GIÁ MỚI 9.45 TỶ.,
+,
+24.4 2023 CHỦ BÁN LẠI TĂNG 200TR. GIÁ MỚI 9.7 TỶ. HH 3%,
+,
+8.2.2023. CHỦ ĐÃ VÀO SG. THỐNG NHẤT BÁN LẠI GIÁ CŨ 9.5T. HH 3%,
+,
+8.1.2023. CHỦ VỀ QUÊ ĂN TẾT. TẠM NGƯNG BÁN QUA TẾT VÀO BÁO LẠI.,
+24.12.2022 CHỦ GẤP BÁN GIẢM 100TR. GIÁ MỚI 9.4 TỶ. HH 3%.,
+,
+NHÀ MẶT TIỀN KINH DOANH GẦN VINCOM NAM LONG QUẬN 7. HỢP ĐỒNG THUÊ SẴN 5 NĂM, THU NHẬP 20TR/ THÁNG.,
+,
+,
+308.20 Đường Huỳnh Tấn Phát 116.1 3 5 23 9.5tỷ. Phường Tân Thuận Tây- Quận 7. HĐ 6 đến 10 tỷ - HĐ Đầu chủ Soan - 0944050289 HH 3% Trên Giá bán. Nguồn ĐC Soan phòng Đại Hùng.,
+,
+Mô Tả:,
+,
+ Diện tích: ngang 5m dài 23m tổng 116.1m2.,
+ Kết cấu: Nhà 1 trệt 2 Lầu sân thượng BTCT kiên cố, 5PN, 5WC. phòng bếp, phòng khách, sân để xe.,
+,
+ Vị trí: Nhà mặt tiền kinh doanh hẻm 308 đường Huỳnh Tấn Phát. Xe hơi ngủ trong nhà. Khu vực xây dựng 7 tầng. Tiện ích: trung tâm thương mại Vincom Nam Long, trường Đại học, trường Quốc tế, phố thời trang, cửa hàng tiện ích, địa điểm ăn uống sầm uất... Hiện nhà đang cho thuê căn hộ dịch vụ hợp đồng 5 năm, thu nhập mỗi tháng 20 triệu.,
+,
+Sổ Hồng chính chủ, sổ vuông vức, hoàn công chuẩn chỉ, công chứng nhanh, vay vốn ngân hàng thoải mái.,
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________
+
+4 1627.34 Huỳnh Tấn Phát
+
+BÁN NHÀ QUẬN 7 HẺM XE HƠI HUỲNH TẤN PHÁT, PHƯỜNG PHÚ MỸ - NHÀ 3TẦNG CÓ DIỆN TÍCH ĐẤT 100m2 - 9.5 Tỷ ,
+,
+LTS 1446,
+,
+1627.34 Huỳnh Tấn Phát 97 3 5.6 15.5 9.5 tỷ phường Phú Mỹ Quận 7 HĐ TP Lộc- phòng Hùng Hưng 0905931456 hoa Hồng 3% giá bán nguồn TP Lộc.,
+,
+Mô tả:,
+- BÁN NHÀ QUẬN 7 HẺM XE HƠI HUỲNH TẤN PHÁT, PHƯỜNG PHÚ MỸ - NHÀ 3TẦNG CÓ DIỆN TÍCH ĐẤT 100m2 ,
+Diện tích: 100m2 (5 x 20) nhà vuông vức ,
+🧱Hiện trạng: Bê tông cốt thép vững chắc, 1 trệt, 2 lẩu Sân đậu xe, Phòng khách, Nhà ăn, 4 phòng ngủ, Ban công, 4wc. Diện tích lớn phù hợp xây dựng căn hộ dịch vụ, biệt thự,...,
+🏙Vị trí: nhà nằm hẻm xe hơi 1 sẹc Huỳnh Tấn Phát, phường Phú Mỹ cách mặt tiền đường khoảng 30m, hẻm thông ra khu dân cư Phạm Hữu Lẩu biệt thự Tấn Trường. Cách Lotte mart khoảng 3km, cách quận 4, trung tâm quận 1 chỉ 10 phút chạy xe.,
+📙Pháp lý: sổ hồng riêng, hoàn công đủ. Kdc hiện hữu, không bị quy hoạch, phù hợp xây nhà cao tầng. Hỗ trợ mua vay ngân hàng.,
+💰Giá chào bán 9,49 tỷ còn thương lượng
+
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________
+
+5 1113.41A Huỳnh Tấn Phát
+GIÁ CHÀO MỚI 6.8 bớt lộc
+
+Giá mới 6.9 tỷ
+
+Hạ chào 200 triệu giá chào mới 7 tỷ
+
+HKĐC - Ký HĐ Điện Tử
+1027 Huỳnh Tấn Phát- HIẾM Ô TÔ TẬN NHÀ - XÂY DỰNG KIÊN CỐ - VÀO LÀ CHỐT.
+
+1113.41A Huỳnh Tấn Phát 63 4 4.5 14 7.2 tỷ Phú Thuận Quận 7 HĐ 6 - 9 Giám đốc Tâm Khối Tinh Anh 0898469123 hoa hồng 3% trên giá bán nguồn HĐTĐ
+
+Mô tả:
+
++ Nhà gồm 1 trệt 2 lầu 1 st tổng 5 PN 3 WC 1 chủ từ xưa đến nay.
++ Ô tô tận nhà hẻm sạch dân trí cao.
++ Sổ hoàn công đủ.
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 1056.41.1 Huỳnh Tấn Phát 57.82/123.45 3 7.8 7.5/15.8 6.9tỷ Phường Tân Phú Quận 7 6 đến 9 HĐ Đầu Chủ Anh Vũ ,Phòng Đại Nam,0934000185, H3%, nguồn Đầu Chủ Anh Vũ.,
 
 
