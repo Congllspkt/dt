@@ -48,7 +48,7 @@ Mua bằng bằng công chứng sang tên cả sổ-(và phần còn lại đứ
 
 + Sổ Hồng chính chủ, công chứng nhanh. Chủ bán hiện trạng hỗ trợ đăng bộ sang tên
 
----
+---1
 
 ☀️Mua bán nhanh!, 3.8 tỷ, 100m2 DTSD, 3 tầng, NGUYỄN THỊ THẬP, phường BÌNH THUẬN, Quận 7
 
@@ -78,7 +78,7 @@ Mô tả: ,
 + Phía sau sân trồng cây, phơi đồ.,
 ,
 https://maps.app.goo.gl/FSTEwcQE3E5eSXVg9?g_st=ic,
-----
+----2
 
 
 💥💥💥Nhà mới, sạch sẽ, thoáng mát!, 5.5tỷ, 100m2, 3 tầng, HUỲNH TẤN PHÁT, TT NHÀ BÈ
@@ -111,7 +111,7 @@ Mô tả
 🔔🔔🔔Nội thất đẹp,vào ở ngay.Ngang lớn 7,8m hiếm có khó tìm.,
 ,
 🔔🔔🔔Hẻm toàn bà con dòng họ siêu an ninh,yên tĩnh,vui vẻ.,
--------
+-------3
 
 ✈️ 6.5tỷ , 84m2, 3 tầng, HUỲNH TẤN PHÁT, phường PHÚ THUẬN, QUẬN 7, HCM
 
@@ -148,7 +148,7 @@ Mô tả:
 - Vị trí:  Hẻm rộng 6m cao ráo, không ngập. Chủ đang ở...do nhu cầu sử dụng không hết kết cấu nhà và Cô Chủ nhà bị bệnh tai biến nên cần Bán để đổi sang căn nhà nhỏ hơn. 
 - Lưu ý: Đi xe hơi đi ngỏ Hẻm 1942/79 vào đến nhà. Xe hơi đậu cửa ngày đêm...
 * Sổ hồng hoàn công đầy đủ, đang vay Bank nên pháp lý chuẩn...Chủ thiện chí Bán nhanh.
-------
+------4
 
 
 🏡Nhà rộng!, 130m2, 4 tầng, 8tỷ, HUỲNH TẤN PHÁT, TT NHÀ BÈ
@@ -182,7 +182,7 @@ Mô tả :,
 - Vị trí an ninh thoáng mát có vỉa hè và cây xanh, cao ráo, dân cư trí thức, khu có cổng rào lớn riêng biệt có chìa khóa riêng,
 - Hỗ trợ vay ngân hàng nếu có nhu cầu.,
 
----
+---5
 ✨Chủ gửi, nhà đẹp!, 80m2, 3 tầng, 6tỷ, HUỲNH TẤN PHÁT, PHÚ XUÂN, TT NHÀ BÈ
 
 ❤️ Diện tích: ngang 6m - dài 13m (80m2)
