@@ -1,4 +1,4 @@
-![alt text](ui.png)
+![alt text](image.png)
 
 ![alt text](erd.png)
 
