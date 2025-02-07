@@ -2,7 +2,7 @@
 
 ![alt text](erd.png)
 
-
+```
 TB_M00_MSG_ACTIVITIES.MSG_USAGE_ID = TB_M00_USAGE.MSG_USAGE_ID
 
 TB_M00_MSG_ACTIVITIES.COMPONENT_ID = TB_M00_ACTIVITY_COMPONENTS.COMPONENT_ID
@@ -38,6 +38,7 @@ Activity 명
 Next SEQ
 Exception SEQ
 클래스 (class)
+```
 
 
 
