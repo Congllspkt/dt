@@ -33,7 +33,7 @@ MSG_USAGE_ID
 
 *** Detail:
 SEQ
-Activity 명
+Activity 명 (activity name)
 컴포넌트명 (component name)
 Next SEQ
 Exception SEQ
