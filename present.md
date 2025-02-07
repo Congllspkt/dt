@@ -1,4 +1,4 @@
-![alt text](<UI meta viewer.png>)
+![alt text](ui.png)
 
 ![alt text](erd.png)
 
@@ -19,4 +19,4 @@ TB_M00_USAGE.MDL_DEFINE_ID = TB_M00_INTERFACES.MDL_DEFINE_ID
 
 
 
-![alt text](<result UI.png>)
+![alt text](ui1.png)
