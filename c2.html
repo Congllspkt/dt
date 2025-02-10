@@ -284,18 +284,40 @@ https://www.facebook.com/groups/hoimuabanbdssaigon/permalink/1268821471082828
 https://www.facebook.com/groups/1969918650060107/permalink/2298419750543327
 https://www.facebook.com/groups/3643861382324918/permalink/9606056156105381
 https://www.facebook.com/groups/1194594703901281/?multi_permalinks=9600982473262420`;
+var i = 0;
 
         const linkArray = links.trim().split('\n');
 
         document.getElementById('openLinksButton').addEventListener('click', () => {
-            const randomLinks = [];
+            var  randomLinks = [];
             while (randomLinks.length < 1) {
                 const randomIndex = Math.floor(Math.random() * linkArray.length);
-                if (!randomLinks.includes(linkArray[randomIndex])) {
+                if (!randomLinks.includes(linkArray[randomIndex]) 
+                && !(localStorage.getItem ("a_link") || []).includes(linkArray[randomIndex])) {
                     randomLinks.push(linkArray[randomIndex]);
+                    links.replace(linkArray[randomIndex], "");
+                    console.log(i++);
                 }
             }
             randomLinks.forEach(link => {
+
+                if (!localStorage.getItem("a_link")) {
+    localStorage.setItem("a_link", JSON.stringify([])); // Set to an empty array
+}
+
+// Now you can retrieve the array or add new links
+var a = JSON.parse(localStorage.getItem("a_link")); // Retrieve the array
+
+// Example of adding a new link
+a.push(link); // Add the new link
+
+// Store the updated array back in localStorage
+localStorage.setItem("a_link", JSON.stringify(a));
+
+// Log the stored value
+console.log("ls: ", localStorage.getItem("a_link"));
+console.log("l: ", links, links.length);
+
                 window.open(link, '_blank');
             });
         });
