@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,14 @@
             text-align: center;
             margin: 50px;
         }
+
         button {
             padding: 10px 20px;
             font-size: 16px;
         }
     </style>
 </head>
+
 <body>
     <h1>Open Random Links</h1>
     <button id="openLinksButton">Open 3 Random Links</button>
@@ -284,43 +287,41 @@ https://www.facebook.com/groups/hoimuabanbdssaigon/permalink/1268821471082828
 https://www.facebook.com/groups/1969918650060107/permalink/2298419750543327
 https://www.facebook.com/groups/3643861382324918/permalink/9606056156105381
 https://www.facebook.com/groups/1194594703901281/?multi_permalinks=9600982473262420`;
-var i = 0;
-
+        ""
         const linkArray = links.trim().split('\n');
 
         document.getElementById('openLinksButton').addEventListener('click', () => {
-            var  randomLinks = [];
+            var randomLinks = [];
             while (randomLinks.length < 1) {
                 const randomIndex = Math.floor(Math.random() * linkArray.length);
-                if (!randomLinks.includes(linkArray[randomIndex]) 
-                && !(localStorage.getItem ("a_link") || []).includes(linkArray[randomIndex])) {
-                    randomLinks.push(linkArray[randomIndex]);
-                    links.replace(linkArray[randomIndex], "");
-                    console.log(i++);
+                if (!(localStorage.getItem("a_link") || []).includes("," + randomIndex + ",")) {
+                    randomLinks.push(randomIndex);
+                    break;
+                } else {
+                    console.log("trung: ", randomIndex);
                 }
             }
             randomLinks.forEach(link => {
 
                 if (!localStorage.getItem("a_link")) {
-    localStorage.setItem("a_link", JSON.stringify([])); // Set to an empty array
-}
+                    localStorage.setItem("a_link", JSON.stringify([])); // Set to an empty array
+                }
 
-// Now you can retrieve the array or add new links
-var a = JSON.parse(localStorage.getItem("a_link")); // Retrieve the array
+                // Now you can retrieve the array or add new links
+                var a = JSON.parse(localStorage.getItem("a_link")); // Retrieve the array
 
-// Example of adding a new link
-a.push(link); // Add the new link
+                // Example of adding a new link
+                a.push(link); // Add the new link
 
-// Store the updated array back in localStorage
-localStorage.setItem("a_link", JSON.stringify(a));
+                // Store the updated array back in localStorage
+                localStorage.setItem("a_link", JSON.stringify(a));
 
-// Log the stored value
-console.log("ls: ", localStorage.getItem("a_link"));
-console.log("l: ", links.length);
-
-                window.open(link, '_blank');
+                // Log the stored value
+                console.log("ls: ", localStorage.getItem("a_link"));
+                window.open(linkArray[link], '_blank');
             });
         });
     </script>
 </body>
+
 </html>
