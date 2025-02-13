@@ -7,9 +7,6 @@ Create Date: 2025-01-15 09:44:32.870508
 """
 from alembic import op
 import sqlalchemy as sa
-import sqlmodel.sql.sqltypes
-from sqlalchemy.dialects import postgresql
-from sqlalchemy.sql import func
 from sqlalchemy.dialects.postgresql import UUID
 
 revision = 'dde655e6f071'
@@ -27,7 +24,7 @@ def upgrade():
         sa.Column('ai_model_id', sa.UUID(), sa.ForeignKey('admin.ai_models.id', ondelete='SET NULL'), nullable=True),  # Foreign key to preset_conversations
         sa.Column('attachment_id', sa.UUID(), sa.ForeignKey('attachments.id', ondelete='CASCADE')),  # Foreign key reference to 'attachments' table
         sa.Column('title', sa.String(255), nullable=True, default='Untitled'),  # Title of the conversation
-        sa.Column('created_at', sa.TIMESTAMP(), nullable=False, default=sa.text('now()')),  # Timestamp for creation
+        sa.Column('created_at', sa.TIMESTAMP(), server_default=sa.func.now()),  # Timestamp for when created
         sa.PrimaryKeyConstraint('id'),  # Primary key on 'id'
         sa.ForeignKeyConstraint(['user_id'], ['users.id'], ondelete='CASCADE')  # Foreign key constraint
     )

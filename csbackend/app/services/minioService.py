@@ -1,9 +1,18 @@
 from minio import Minio
 from minio.error import S3Error
 from io import BytesIO
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class MinioService:
-    def __init__(self, endpoint, access_key, secret_key, bucket_name):
+    def __init__(self):
+        endpoint = os.getenv("MINIO_ENDPOINT")
+        access_key = os.getenv("MINIO_ACCESS_KEY")
+        secret_key = os.getenv("MINIO_SECRET_KEY")
+        bucket_name = os.getenv("MINIO_BUCKET_NAME")
+        
         self.client = Minio(endpoint, access_key, secret_key, secure=False)
         self.bucket_name = bucket_name
         if not self.client.bucket_exists(bucket_name):

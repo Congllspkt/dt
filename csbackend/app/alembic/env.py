@@ -4,6 +4,15 @@ from logging.config import fileConfig
 from alembic import context
 from sqlalchemy import engine_from_config, pool
 
+import sys
+
+from pathlib import Path
+
+current_file = Path(__file__)  # Đối tượng Path của file hiện tại
+parent_dir = current_file.parent.parent
+lib_path = os.path.dirname(os.path.abspath(parent_dir))
+sys.path.append(lib_path)  # Thêm vào sys.path
+
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config

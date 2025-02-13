@@ -7,10 +7,6 @@ Create Date: 2024-07-19 04:08:04.000976
 """
 from alembic import op
 import sqlalchemy as sa
-import sqlmodel.sql.sqltypes
-from sqlalchemy.dialects import postgresql
-from sqlalchemy.dialects.postgresql import UUID
-from sqlalchemy.sql import func
 
 revision = 'd98dd8ec85a3'
 down_revision = '9c0a54914c78'

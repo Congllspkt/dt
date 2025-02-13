@@ -90,13 +90,3 @@ class TokenPayload(SQLModel):
 class NewPassword(SQLModel):
     token: str
     new_password: str = Field(min_length=8, max_length=40)
-
-class File(SQLModel, table=True):
-    id: Optional[uuid.UUID] = Field(default_factory=uuid.uuid4, primary_key=True)
-    file_name: str
-    file_type: str
-    file_size: int
-    file_location: str
-    storage_type: str
-    __tablename__ = "file_attachments"
-

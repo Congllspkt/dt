@@ -1,0 +1,36 @@
+# @router.post("/load_session")
+# async def load_session():
+    # Step 1: Check sesession alredly init
+        # If loaded Query bangr conversations, messages
+        # return conversation
+    # Step 2 Loaded chat:
+        # Read message template from table 
+            # Read settings table
+            # get preset conversations + reset messages
+            # AIAgent.sendMessage(filedata)
+        # Read list of file attachment
+        # for loop files:
+            # go to minio read filedata
+            # Create message in table messages, luu messagee
+            # var result = AIAgent.sendMessage(filedata)
+            # create messages queries
+            # if error delete all step, and return to front end error
+        # Give me and design 
+            # create messages for fist ask design
+            # var designResult = AIAgent.sendMessage(filedata)
+            # create messages queries
+    # Step3:
+        # Return conversation, messages
+    
+
+# @router.post("/send_message")
+# async def send_message():
+    # Read all messages : doc len hisstory chat
+    # Tao message vowis noi dung Design nay chu ok voi toi  
+    #
+    # ai messages = messages + Design nay chu ok voi toi
+    # result = AIAgemt.sendMessage(ai messages)
+    # message_queries
+
+        
+

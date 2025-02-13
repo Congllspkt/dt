@@ -7,8 +7,6 @@ Create Date: 2025-01-15 09:31:51.387952
 """
 from alembic import op
 import sqlalchemy as sa
-import sqlmodel.sql.sqltypes
-from sqlalchemy.sql import func
 
 revision = 'fac3a2bffe70'
 down_revision = '1a31ce608336'

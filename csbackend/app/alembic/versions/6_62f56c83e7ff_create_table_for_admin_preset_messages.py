@@ -7,8 +7,6 @@ Create Date: 2025-01-15 09:44:32.870508
 """
 from alembic import op
 import sqlalchemy as sa
-import sqlmodel.sql.sqltypes
-from sqlalchemy.dialects import postgresql
 from sqlalchemy.sql import func
 
 revision = '62f56c83e7ff'
