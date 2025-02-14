@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 25.45.19 Chuyên Dùng 9 Vi Bằng
 1592.51 ( Hẻm 49. Số Mới Kế 49.12E) Phạm Hữu Lầu c4 chờ sổ_________________
 1041.62.233.9 Trần Xuân Soạn c4_____________________
@@ -236,3 +237,5 @@ KC32.5 Trần Xuân Soạn
 Tờ 45 Thửa 550 ( Hẻm 62.53 ) Lâm Văn Bền
 1113.41A Huỳnh Tấn Phát
 803.23.10.25 Huỳnh Tấn Phát
+=======
+>>>>>>> 575f9462c6523043d973ba4fd9ddc060d05ac987
