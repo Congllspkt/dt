@@ -5,12 +5,12 @@
 115.65C Phạm Hữu Lầu 41.7 2 3.1 13.25 2.95 tỷ , Phường Phú Mỹ , Quận 7
 41.52B Chuyên Dùng 9 32 3 3.2 10 2.35 tỷ Phú Mỹ Quận 7
 
-1225.23.21 Huỳnh Tấn Phát 52.6 2 4.2 13 2.25 tỷ Phú Thuận Quận 7
-205.8C Huỳnh Tấn Phát 44 3 5 8 3.2 tỷ Phường Tân Thuận Đông Quận 7
 KC32A Huỳnh Tấn Phát 30.6 2 2.8 11 3 tỷ Tân Thuận Tây Quận 7
 17.18E Huỳnh tấn Phát 34.4 2 3 11 2.85 tỷ Tân Thuận Đông Quận 7
-1117 Huỳnh Tấn Phát 69.3 8 7 20 2.5 tỷ Phú Thuận Quận 7
+205.8C Huỳnh Tấn Phát 44 3 5 8 3.2 tỷ Phường Tân Thuận Đông Quận 7
 435.53.13.7.1 Huỳnh Tấn Phát 30 2 4 8 2.1 tỷ Tân Thuận Đông Quận 7 
+1117 Huỳnh Tấn Phát 69.3 8 7 20 2.5 tỷ Phú Thuận Quận 7
+1225.23.21 Huỳnh Tấn Phát 52.6 2 4.2 13 2.25 tỷ Phú Thuận Quận 7
 
 793.28.13.20.6.17 Trần xuân Soạn 34 2 4.7 8 2.9 tỷ Tân Hưng Quận 7
 331.12 Trần Xuân Soạn 48 1 4 12 2.8 tỷ Tân Kiểng Quận 7
