@@ -52,23 +52,23 @@ A1.22.13 cc BLV Q7 Đường Nguyễn Lương Bằng
 
 
 
-r 21.14 Tân Mỹ
+r 21.14 Tân Mỹ dt 
 
 b 861.69B Trần Xuân Soạn
-r 861.27.34A Trần Xuân Soạn
+r 861.27.34A Trần Xuân Soạn plok
 
 r 331.12 Trần Xuân Soạn
 
 r 98.21 Lê Văn Lương
 r 380.111 Lê Văn Lương
 
-r 91.5 Đường 15 
+r 91.5 Đường 15 plok
 
 r 176.25.17 Nguyễn Thị Thập
 r 156.46C nguyễn thị thập
 
-r 30.99.8.22 Lâm văn Bền
-r 30.99.47D Lâm văn Bền
+r 30.99.8.22 Lâm văn Bền plok
+r 30.99.47D Lâm văn Bền plok
 r 4 Phú Thuận
 
 
