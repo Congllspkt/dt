@@ -1,4 +1,3 @@
-(Gần Căn 160.91.75.1B)
 88.89.30.8F Nguyễn Văn Quỳ 
 88.117.10F Nguyễn Văn Quỳ
 88.69.46A Nguyễn văn Quỳ
@@ -35,20 +34,7 @@ KC54.21 Huỳnh tấn Phát
 
 1041.62.186.3 Trần Xuân Soạn
 793.28.13.20.6.17 Trần xuân Soạn
-861.69B Trần Xuân Soạn
-861.27.34A Trần Xuân Soạn
-331.12 Trần Xuân Soạn
 
-98.21 Lê Văn Lương
-380.111 Lê Văn Lương
-
-91.5 Đường 15 64.35 2 10.57 6.95/7 5.3
-
-176.25.17 Nguyễn Thị Thập
-156.46C nguyễn thị thập
-
-30.99.8.22 Lâm văn Bền
-30.99.47D Lâm văn Bền
 
 
 39.9 Lưu Trọng Lư
@@ -56,12 +42,34 @@ KC54.21 Huỳnh tấn Phát
 600 Nguyễn Lương Bằng
 A1.22.13 cc BLV Q7 Đường Nguyễn Lương Bằng
 
-4 Phú Thuận
 
 300.34.47.36 Nguyễn Văn Linh
 
 19.18 Trần Văn Khánh
 
-21.14 Tân Mỹ
+
+
+
+
+
+r 21.14 Tân Mỹ
+
+b 861.69B Trần Xuân Soạn
+r 861.27.34A Trần Xuân Soạn
+
+r 331.12 Trần Xuân Soạn
+
+r 98.21 Lê Văn Lương
+r 380.111 Lê Văn Lương
+
+r 91.5 Đường 15 
+
+r 176.25.17 Nguyễn Thị Thập
+r 156.46C nguyễn thị thập
+
+r 30.99.8.22 Lâm văn Bền
+r 30.99.47D Lâm văn Bền
+r 4 Phú Thuận
+
 
 
