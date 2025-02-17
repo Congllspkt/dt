@@ -1,24 +1,59 @@
+create new API method POST load_session input paremeter is conversation_id
+process steps: 
+
+1.
+get data from conversations join messages on conversations.id = messages.conversation_id
+return table include columns:  conversations.id, messages.id, conversations.attachment_id, conversations.title, messages.sender, messages.content
+
+2.
+get data from settings table have columns: id, name, value
+
+get data from preset_conversations table have columns:  id, title, description
+join with preset_messages table by preset_conversation_id with columns: id, sequence, sender, content
+order by sequence description
+
+
+get list file attachment same with function get_files_from_conversation
+loop list files: 
+    read content file from minIO,  
+    Create messages in table messages with columns: id, conversation_id, sender (user login), content (content file), created_at
+    Create message_queries with columns: id, message_id, prompt = "", response = "", tokens_used = ""
+return messages join message_queries
+
+design 
+    Create messages in table messages with columns: id, conversation_id, sender (user login), content ("first message"), created_at
+    get all messasge from messages join message_queries
+    designResult = AIAgent.sendMessage(allmessages)
+    Create message_queries with columns: id, message_id, prompt = "", response = designResult, tokens_used = ""
+return design messages join message_queries
+
+
+
+
+
+
 # @router.post("/load_session")
 # async def load_session():
     # Step 1: Check sesession alredly init
-        # If loaded Query bangr conversations, messages
+        # If loaded Query bang conversations, messages
         # return conversation
     # Step 2 Loaded chat:
         # Read message template from table 
             # Read settings table
-            # get preset conversations + reset messages
-            # AIAgent.sendMessage(filedata)
+            # get preset conversations + preset messages
+            -----# AIAgent.sendMessage(content)
+
         # Read list of file attachment
         # for loop files:
             # go to minio read filedata
             # Create message in table messages, luu messagee
-            # var result = AIAgent.sendMessage(filedata)
             # create messages queries
             # if error delete all step, and return to front end error
         # Give me and design 
             # create messages for fist ask design
-            # var designResult = AIAgent.sendMessage(filedata)
-            # create messages queries
+            # get all messsages
+            # var designResult = AIAgent.sendMessage(allmessages)
+            # create messages queries (design Results)
     # Step3:
         # Return conversation, messages
     
@@ -31,6 +66,3 @@
     # ai messages = messages + Design nay chu ok voi toi
     # result = AIAgemt.sendMessage(ai messages)
     # message_queries
-
-        
-
