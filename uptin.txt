@@ -1,9 +1,3 @@
-88.89.30.8F Nguyễn Văn Quỳ 
-88.117.10F Nguyễn Văn Quỳ
-88.69.46A Nguyễn văn Quỳ
-88.3.18.11 Nguyễn Văn Quỳ
-160.91.48.12A Nguyễn Văn Quỳ
-160.91.30c Nguyễn Văn Quỳ
 
 
 
@@ -32,7 +26,7 @@ KC54.21 Huỳnh tấn Phát
 53.7c ( khảo sát : 1428.1 ) Huỳnh Tấn Phát
 
 
-1041.62.186.3 Trần Xuân Soạn
+
 793.28.13.20.6.17 Trần xuân Soạn
 
 
@@ -73,3 +67,10 @@ r 4 Phú Thuận
 
 
 
+r 88.89.30.8F Nguyễn Văn Quỳ 
+r 88.117.10F Nguyễn Văn Quỳ
+r 88.69.46A Nguyễn văn Quỳ
+r 88.3.18.11 Nguyễn Văn Quỳ
+r 160.91.48.12A Nguyễn Văn Quỳ
+r 160.91.30c Nguyễn Văn Quỳ
+r 1041.62.186.3 Trần Xuân Soạn
