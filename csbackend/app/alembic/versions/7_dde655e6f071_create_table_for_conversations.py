@@ -36,7 +36,7 @@ def upgrade():
         sa.Column('conversation_id', UUID(), nullable=True),  # Foreign key to conversations
         sa.Column('sender', sa.String(50), nullable=False),  # Sender of the message
         sa.Column('content', sa.Text(), nullable=False),  # Content of the message
-        sa.Column('created_at', sa.TIMESTAMP(), nullable=False, default=sa.text('now()')),  # Timestamp for creation
+        sa.Column('created_at', sa.TIMESTAMP(), server_default=sa.func.now()),  # Timestamp for when created
         sa.PrimaryKeyConstraint('id'),  # Primary key on 'id'
         sa.ForeignKeyConstraint(['conversation_id'], ['conversations.id'], ondelete='CASCADE')  # Foreign key constraint
     )
@@ -49,7 +49,7 @@ def upgrade():
         sa.Column('prompt', sa.Text(), nullable=False),  # Prompt for the model
         sa.Column('response', sa.Text(), nullable=False),  # Response from the model
         sa.Column('tokens_used', sa.Integer(), nullable=True, default=0),  # Tokens used, default to 0
-        sa.Column('created_at', sa.TIMESTAMP(), nullable=False, default=sa.text('now()')),  # Timestamp for creation
+        sa.Column('created_at', sa.TIMESTAMP(), server_default=sa.func.now()),  # Timestamp for when created
         sa.PrimaryKeyConstraint('id'),  # Primary key on 'id'
         sa.ForeignKeyConstraint(['message_id'], ['messages.id'], ondelete='CASCADE')  # Foreign key constraint
     )

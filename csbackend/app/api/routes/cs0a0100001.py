@@ -59,11 +59,10 @@ async def upload_file(file: UploadFile = File(...), session: Session = Depends(g
                     file_url = minio_service.upload_file(extracted_file_data, file_path, rar_info.filename)
                 
                     if file_url:
-                        # Create a new file attachment record
                         file_attachment_record = FileAttachment(
                             attachment_id=attachment_record.id,
                             storage_type='MinIO',
-                            file_name=rar_info.filename,
+                            file_name=f"{folder_name}/{rar_info.filename}",
                             file_type=rar_info.filename.split('.')[-1],
                             file_size=len(extracted_file_data),
                             file_location=file_url
@@ -100,5 +99,4 @@ async def upload_file(file: UploadFile = File(...), session: Session = Depends(g
     session.add(conversation_record)
     session.commit()
     session.refresh(conversation_record)
-
     return {"conversation_id": conversation_record.id}
