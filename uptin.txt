@@ -1,67 +1,144 @@
 
-
-
-
-115.65C Phạm Hữu Lầu
-115.21.10H Phạm Hữu Lầu
-115.52.20 Phạm Hữu Lầu
-41.52B Chuyên Dùng 9
-
-KC32A Huỳnh Tấn Phát
-KC54.21 Huỳnh tấn Phát
-
-17.18E Huỳnh tấn Phát
-205.8C Huỳnh Tấn Phát
-435.53.13.7.1 Huỳnh Tấn Phát
-1117 Huỳnh Tấn Phát
-1225.23.21 Huỳnh Tấn Phát
-
-88.10. Huỳnh Tấn Phát 
-630.5 Huỳnh Tấn Phát
-824.21.19 Huỳnh tấn Phát 
-944.27 Huỳnh Tấn Phát 
-17.25( 944.31 ) Huỳnh Tấn Phát
-1056.56.2 Huỳnh Tấn Phát
-150.20 Huỳnh Tấn Phát
-53.7c ( khảo sát : 1428.1 ) Huỳnh Tấn Phát
-
-
-
-793.28.13.20.6.17 Trần xuân Soạn
-
-
-
-39.9 Lưu Trọng Lư
-
+133.29L Văn Thân
+154.136.15.19 Âu Dương Lân
+85.11.7 Nguyễn Thị Xiếu
+29.16 Nguyễn Thị Xiếu
+125.1b Tân Mỹ
+26 Đường Số 13
+78.6 đường 17
+53.30.11 Bùi Văn Ba
+44B.26 Bùi Văn Ba
+67.40 Bùi Văn Ba
+1583.28 Phạm Thế Hiển
+thửa 508 tờ 63 ( số mới : 22.19A ) Phú Thuận
+6.64a trần văn khánh
+77.20.22 Đường Số 8
+21.18 Tân Mỹ
+44.20 ( Trần Văn Khánh )
+18 Lê Thị Chợ
+56.6.9 Gò Ô Môi
 600 Nguyễn Lương Bằng
 A1.22.13 cc BLV Q7 Đường Nguyễn Lương Bằng
-
-
 300.34.47.36 Nguyễn Văn Linh
-
 19.18 Trần Văn Khánh
 
+115.28.7 Phạm Hữu Lầu
+
+77.10A Chuyên Dùng 9
+59.21 Chuyên Dùng 9	
+41.36.25 Chuyên Dùng 9
+77.42.3 Chuyên Dùng 9
+
+39.9 Lưu Trọng Lư
+63.54 Lưu Trọng Lư
+63.28 Lưu Trọng Lư
+39.9 Lưu Trọng Lư
+
+100.1 Huỳnh Tấn Phát
+106.7 huỳnh tấn phát
+107.9 ( Số Mới 128.40) Huỳnh Tấn Phát
+1113.39 Huỳnh Tấn Phát
+1115.6 huỳnh tấn phát
+1115.70A ( Số mới: 1135.41.22 ) Huỳnh Tấn Phát
+1117 Huỳnh Tấn Phát
+1135.3.8 Huỳnh Tấn Phát
+1135.69B Huỳnh Tấn Phát
+1205.27 Huỳnh Tấn Phát
+1205.31 Huỳnh Tấn Phát
+1225.23.21 Huỳnh Tấn Phát
+128.71 Huỳnh Tấn Phát
+1360.1 Huỳnh Tấn Phát
+1387.14 huỳnh tấn phát
+1422.59.23 Huỳnh Tấn Phát
+15.7C ( Số mới 391.47 ) Huỳnh Tấn Phát Huỳnh Tấn Phát
+150.20 Huỳnh Tấn Phát
+1506.8.6 Huỳnh Tấn Phát
+1542.29.18 Huỳnh tấn Phát
+156.11.14 huỳnh tấn phát
+1627.2a huỳnh tấn phát
+166.2 Huỳnh Tấn Phát
+17.18E Huỳnh tấn Phát
+17.18E Huỳnh tấn Phát
+205.10.5 Huỳnh Tấn Phát
+205.31.12 Huỳnh Tấn Phát
+205.8C Huỳnh Tấn Phát
+296.14 Huỳnh Tấn Phát
+308.27.24 Huỳnh Tấn Phát
+308.59B Huỳnh Tấn Phát
+308.63 Huỳnh tấn Phát
+308.73 Huỳnh Tấn Phát
+314.14 Huỳnh Tấn Phát
+350.18A Huỳnh Tấn Phát
+350.36.15A Huỳnh Tấn Phát
+381.18 Huỳnh Tấn Phát
+435.53.13.7.1 Huỳnh Tấn Phát
+458.36.10 Huỳnh Tấn Phát
+458.43B Huỳnh Tấn Phát
+487.10.11 Huỳnh Tấn Phát
+487.1D Huỳnh Tấn Phát
+502.37.36 ( Số Cũ 21.6E ) Huỳnh Tấn Phát
+585.40 Huỳnh Tấn Phát
+604.11 ( Số Cũ 16.2 ) Huỳnh Tấn Phát
+666.31 Huỳnh Tấn Phát
+710.7 Huỳnh Tấn Phát
+803.44.9A Huỳnh Tấn Phát
+803.58.109 Huỳnh Tấn Phát
+891. Huỳnh Tấn Phát
+994.75A ( Hẻm này ) Huỳnh Tấn Phát
+994B.58 Huỳnh Tấn Phát
+KC 76.5.4 Huỳnh Tấn Phát
+KC32A Huỳnh Tấn Phát
 
 
+253.62 Trần Xuân Soạn
+645.38.2 trần xuân soạn
+701.18.9A Trần Xuân Soạn
+751.3 Trần Xuân Soạn
+791.23.3.3C Trần Xuân Soạn
+791.23.45 Trần Xuân Soạn
+791.23.7K7 Trần Xuân Soạn
+791.23.9B Trần Xuân Soạn
+793.11 Trần Xuân Soạn
+793.28.13.20.11 Trần Xuân Soạn
+793.28.13.20.6.17 Trần xuân Soạn
+793.28.13.20.6.17 Trần xuân Soạn
+85.21 Trần Xuân Soạn
+861.27.4.3 Trần Xuân Soạn
+861.72.46 Trần Xuân Soạn
+861.98 Trần Xuân Soạn
+941.13.14 Trần Xuân Soạn
+941.20 Trần Xuân Soạn
+967.26A Trần Xuân Soạn
+967.39 Trần Xuân Soạn
+1041.20.10 Trần Xuân Soạn
+1041.62.102 ( Thửa 520 tờ 67) Trần Xuân Soạn
+1041.62.181.4.6 Trần Xuân Soạn
+1041.80.32 Trần Xuân Soạn
+1041.94.24 Trần Xuân Soạn
 
+11.3A ( Số mới 176.20.14 ) Nguyễn Thị Thập
+118.5 Nguyễn Thị Thập
+257.9 (số cũ 357) Nguyễn Thị Thập
+52.17.4 Nguyễn Thị Thập
 
+109.10 Nguyễn Văn Quỳ
+109.10B Nguyễn văn Quỳ
+155.13 Nguyễn Văn Quỳ
+160.57.40B Nguyễn Văn Quỳ
+160.91.23.2 Nguyễn Văn Quỳ
+240.20 Nguyễn Văn Quỳ
+88.69.42A Nguyễn Văn Quỳ
+88.69.42H Nguyễn Văn Quỳ
+88.70 Nguyễn Văn Quỳ
+88.89.30.22 Nguyễn Văn quỳ
 
-r 21.14 Tân Mỹ dt 
-b 861.69B Trần Xuân Soạn
-r 861.27.34A Trần Xuân Soạn plok
-r 331.12 Trần Xuân Soạn
-r 98.21 Lê Văn Lương
-r 380.111 Lê Văn Lương
-r 91.5 Đường 15 plok
-r 176.25.17 Nguyễn Thị Thập
-r 156.46C nguyễn thị thập
-r 30.99.8.22 Lâm văn Bền plok
-r 30.99.47D Lâm văn Bền plok
-r 4 Phú Thuận
-r 88.89.30.8F Nguyễn Văn Quỳ 
-r 88.117.10F Nguyễn Văn Quỳ
-r 88.69.46A Nguyễn văn Quỳ
-r 88.3.18.11 Nguyễn Văn Quỳ
-r 160.91.48.12A Nguyễn Văn Quỳ
-r 160.91.30c Nguyễn Văn Quỳ
-r 1041.62.186.3 Trần Xuân Soạn
+108.32.1A Lê Văn Lương
+98.15A Lê văn Lương
+380.49a ( 954.15.11.1 ) Lê văn lương
+
+130.14c lâm văn bền
+279.1.5 Lâm Văn Bền
+279.11.2 Lâm Văn Bền
+30.98 Lâm văn Bền
+60.44.21 Lâm Văn Bền
+62.11.8 Lâm Văn Bền
