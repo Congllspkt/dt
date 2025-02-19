@@ -13,6 +13,8 @@
 279.11.2 Lâm Văn Bền
 60.44.21 Lâm Văn Bền
 62.11.8 Lâm Văn Bền
+125.1b Tân Mỹ
+
 
 1041.62.102 ( Thửa 520 tờ 67) Trần Xuân Soạn
 1041.62.181.4.6 Trần Xuân Soạn
@@ -27,7 +29,6 @@
 154.136.15.19 Âu Dương Lân
 85.11.7 Nguyễn Thị Xiếu
 29.16 Nguyễn Thị Xiếu
-125.1b Tân Mỹ
 26 Đường Số 13
 78.6 đường 17
 53.30.11 Bùi Văn Ba
