@@ -116,10 +116,7 @@ KC32A Huỳnh Tấn Phát
 1041.80.32 Trần Xuân Soạn
 1041.94.24 Trần Xuân Soạn
 
-11.3A ( Số mới 176.20.14 ) Nguyễn Thị Thập
-118.5 Nguyễn Thị Thập
-257.9 (số cũ 357) Nguyễn Thị Thập
-52.17.4 Nguyễn Thị Thập
+
 
 109.10 Nguyễn Văn Quỳ
 109.10B Nguyễn văn Quỳ
@@ -132,6 +129,14 @@ KC32A Huỳnh Tấn Phát
 88.70 Nguyễn Văn Quỳ
 88.89.30.22 Nguyễn Văn quỳ
 
+
+
+
+
+11.3A ( Số mới 176.20.14 ) Nguyễn Thị Thập
+257.9 (số cũ 357) Nguyễn Thị Thập
+52.17.4 Nguyễn Thị Thập
+
 108.32.1A Lê Văn Lương
 98.15A Lê văn Lương
 380.49a ( 954.15.11.1 ) Lê văn lương
@@ -139,6 +144,5 @@ KC32A Huỳnh Tấn Phát
 130.14c lâm văn bền
 279.1.5 Lâm Văn Bền
 279.11.2 Lâm Văn Bền
-30.98 Lâm văn Bền
 60.44.21 Lâm Văn Bền
 62.11.8 Lâm Văn Bền
