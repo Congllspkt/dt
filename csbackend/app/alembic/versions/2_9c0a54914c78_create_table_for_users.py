@@ -45,6 +45,6 @@ def upgrade():
     )
 
 def downgrade():
+    op.drop_table("items")
     op.drop_index(op.f("users_email_idx"), table_name="users")
     op.drop_table("users")
-    op.drop_table("items")

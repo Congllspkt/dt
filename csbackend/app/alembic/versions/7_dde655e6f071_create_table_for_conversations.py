@@ -46,6 +46,7 @@ def upgrade():
         'message_queries',
         sa.Column('id', UUID(), nullable=False, default=sa.text('uuid_generate_v4()')),  # UUID generated using uuid_generate_v4()
         sa.Column('message_id', UUID(), nullable=True),  # Foreign key to messages
+        sa.Column('model_name', sa.String(50), nullable=False),  # Sender of the message
         sa.Column('prompt', sa.Text(), nullable=False),  # Prompt for the model
         sa.Column('response', sa.Text(), nullable=False),  # Response from the model
         sa.Column('tokens_used', sa.Integer(), nullable=True, default=0),  # Tokens used, default to 0
