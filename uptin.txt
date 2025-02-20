@@ -1,59 +1,39 @@
-
-
-11.3A ( Số mới 176.20.14 ) Nguyễn Thị Thập
-257.9 (số cũ 357) Nguyễn Thị Thập
-52.17.4 Nguyễn Thị Thập
-
-108.32.1A Lê Văn Lương
-98.15A Lê văn Lương
-380.49a ( 954.15.11.1 ) Lê văn lương
-
-130.14c lâm văn bền
-279.1.5 Lâm Văn Bền
-279.11.2 Lâm Văn Bền
-60.44.21 Lâm Văn Bền
-62.11.8 Lâm Văn Bền
-125.1b Tân Mỹ
-
-
 1041.62.102 ( Thửa 520 tờ 67) Trần Xuân Soạn
 1041.62.181.4.6 Trần Xuân Soạn
 1041.80.32 Trần Xuân Soạn
 (vào hẻm 1041.80) 1041.94.24 Trần Xuân Soạn
 
-
-
-
-
-
-
-
-
-
-
-
-
-133.29L Văn Thân
-154.136.15.19 Âu Dương Lân
 85.11.7 Nguyễn Thị Xiếu
 29.16 Nguyễn Thị Xiếu
 26 Đường Số 13
 78.6 đường 17
+
 53.30.11 Bùi Văn Ba
 44B.26 Bùi Văn Ba
 67.40 Bùi Văn Ba
-1583.28 Phạm Thế Hiển
+
 thửa 508 tờ 63 ( số mới : 22.19A ) Phú Thuận
+
 6.64a trần văn khánh
-77.20.22 Đường Số 8
-21.18 Tân Mỹ
-44.20 ( Trần Văn Khánh )
-18 Lê Thị Chợ
-56.6.9 Gò Ô Môi
-600 Nguyễn Lương Bằng
-A1.22.13 cc BLV Q7 Đường Nguyễn Lương Bằng
-300.34.47.36 Nguyễn Văn Linh
 19.18 Trần Văn Khánh
+
+77.20.22 Đường Số 8
+
+21.18 Tân Mỹ
+
+44.20 ( Trần Văn Khánh )
+
+18 Lê Thị Chợ
+
+56.6.9 Gò Ô Môi
+
+600 Nguyễn Lương Bằng
+
+A1.22.13 cc BLV Q7 Đường Nguyễn Lương Bằng
+
+300.34.47.36 Nguyễn Văn Linh
+
+
 
 115.28.7 Phạm Hữu Lầu
 
@@ -120,7 +100,6 @@ A1.22.13 cc BLV Q7 Đường Nguyễn Lương Bằng
 994.75A ( Hẻm này ) Huỳnh Tấn Phát
 994B.58 Huỳnh Tấn Phát
 KC 76.5.4 Huỳnh Tấn Phát
-KC32A Huỳnh Tấn Phát
 
 
 253.62 Trần Xuân Soạn
