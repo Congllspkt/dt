@@ -31,7 +31,7 @@ def upgrade():
     op.create_table(
         'preset_messages',
         sa.Column('id', sa.UUID(), primary_key=True, server_default=func.uuid_generate_v4()),  # UUID primary key
-        sa.Column('sequence', sa.Integer(), nullable=False),  # Sequence of the message
+        sa.Column('seq', sa.Integer(), nullable=False),  # Sequence of the message
         sa.Column('preset_conversation_id', sa.UUID(), sa.ForeignKey('admin.preset_conversations.id', ondelete='CASCADE'), nullable=False),  # Foreign key to preset_conversations
         sa.Column('sender', sa.String(50), nullable=False),  # Sender of the message with varchar(50)
         sa.Column('content', sa.Text(), nullable=True),  # Content of the message

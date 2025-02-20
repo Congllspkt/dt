@@ -1,15 +1,19 @@
 import sentry_sdk
+import logging.config
 from fastapi import FastAPI
 from fastapi.routing import APIRoute
 from starlette.middleware.cors import CORSMiddleware
 
 from app.api.main import api_router
 from app.core.config import settings
+from app.core.logging_config import logging_config
+from app.shared.exception.cs_exception_handler import init_exception_handlers
 
+
+logging.config.dictConfig(logging_config)
 
 def custom_generate_unique_id(route: APIRoute) -> str:
     return f"{route.tags[0]}-{route.name}"
-
 
 if settings.SENTRY_DSN and settings.ENVIRONMENT != "local":
     sentry_sdk.init(dsn=str(settings.SENTRY_DSN), enable_tracing=True)
@@ -20,7 +24,8 @@ app = FastAPI(
     generate_unique_id_function=custom_generate_unique_id,
 )
 
-# Set all CORS enabled origins
+init_exception_handlers(app)
+
 if settings.all_cors_origins:
     app.add_middleware(
         CORSMiddleware,

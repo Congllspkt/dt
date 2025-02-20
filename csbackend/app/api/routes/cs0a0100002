@@ -41,8 +41,6 @@ return design messages join message_queries
         # Read message template from table 
             # Read settings table
             # get preset conversations + preset messages
-            -----# AIAgent.sendMessage(content)
-
         # Read list of file attachment
         # for loop files:
             # go to minio read filedata
@@ -56,6 +54,19 @@ return design messages join message_queries
             # create messages queries (design Results)
     # Step3:
         # Return conversation, messages
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 # @router.post("/send_message")
