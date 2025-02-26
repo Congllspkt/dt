@@ -73,7 +73,7 @@
         <div class="form-group">
             <br><br>
             <br><br>
-            <label>Chọn khu vực bán</label>
+            <label>Chọn khu vực b.án</label>
             <div class="label-select-container">
                 <select class="form-control" id="khuvuc" name="dropdownO">
                 </select>
@@ -86,11 +86,11 @@
             </div>
 
             <br>
-            <label>Thông tin căn nhà</label>
+            <label>Thông tin căn N.hà</label>
             <div class="label-select-container">
                 <div class="input-container">
-                    <input type="number" class="form-control short-input" id="dientich" placeholder="Diện tích (M)">
-                    <input type="number" class="form-control short-input" id="gia" placeholder="Giá (tỷ)">
+                    <input type="number" class="form-control short-input" id="dientich" placeholder="Dt (M)">
+                    <input type="number" class="form-control short-input" id="gia" placeholder="Giá (T)">
                     <input type="number" class="form-control short-input" id="tang" placeholder="tầng">
                     <input type="number" class="form-control short-input" id="pn" placeholder="Phòng ngủ">
                 </div>
@@ -102,9 +102,9 @@
                 </div>
             </div>
             <br>
-            <label>Tiêu chí căn nhà</label><br>
+            <label>Tiêu chí căn N.hà</label><br>
             <input type="checkbox" id="hxh" name="check5345box3"><label for="check5345box3">Hẻm xe hơi</label><br>
-            <input type="checkbox" id="shr" name="checwetrtkbox3"><label for="checwetrtkbox3">Sổ hồng riêng</label><br>
+            <input type="checkbox" id="shr" name="checwetrtkbox3"><label for="checwetrtkbox3">Shr</label><br>
             <input type="checkbox" id="btct" name="chebxcvckbox3"><label for="chebxcvckbox3">Bê tông cốt
                 thép</label><br>
             <input type="checkbox" id="trungtam" name="gdfg"><label for="gdfg">Gần quận 1, 4, 8, khu vực xung
@@ -125,7 +125,7 @@
 
             <p>20s soạn được 1 tin đăng</p>
             <p>Cách sử dụng</p>
-            <p>+ B1: nhập đầy dủ thông tin về khu vực, phường, diện tích, giá, tầng, số PN, ngang, dài</p>
+            <p>+ B1: nhập đầy dủ thông tin về khu vực, phường, Dt, giá, tầng, số PN, ngang, dài</p>
             <p>+ B2: Chọn 1 vài tiêu chí như HXH, an ninh,.... và các khu vực lân cận</p>
             <p>+ B3: nhập thông tin liên hệ, ví dụ: "SDT/ZALO 01233.456.7489", sau khi tạo tin 1 lần, thông tin này sẽ
                 lưu vào máy, lần sau mỡ web không cần nhập lại</p>
@@ -268,7 +268,7 @@
                 "BÌNH THUẬN",
                 "PHÚ MỸ",
                 "PHÚ XUÂN",
-                "TT NHÀ BÈ",
+                "TT N.hà BÈ",
                 "PHÚ THUẬN"
             ];
 
@@ -329,149 +329,149 @@
                 // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                 var listtd = [
-                    "**999gia_tỷ , 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, QUẬN 7, HCM"
-                    , "** 999gia_tỷ , 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, QUẬN 7, HCM"
-                    , "** 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, QUẬN 7, HCM"
-                    , "**Bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Bán gấp!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Gấp bán!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Gấp bán!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà cực đẹp!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà siêu rộng!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà rộng!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp thoáng mát!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà rộng thoáng mát!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà rộng thoáng, bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Khu Vip!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Siêu phẩm!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Siêu Phẩm!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Siêu Vip!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà mới, sạch sẽ, thoáng mát!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Mua bán nhanh!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Chủ nhà cần bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Chủ nhà gấp bán, gảm 200tr!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Khu Vip!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà siêu đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Bán nhà phố siêu đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Bán nhà phố cực rộng, thoáng mát!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Bán nhà phố hiện đại, siêu đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Chủ định cư Mỹ, bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
-                    , "**Nhà rộng!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà rộng thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà rộng thoáng, bán gấp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Siêu Phẩm!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Siêu Vip!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà mới, sạch sẽ, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Mua bán nhanh!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Chủ nhà cần bán gấp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Chủ nhà gấp bán, gảm 200tr!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Bán nhà phố siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Bán nhà phố cực rộng, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Bán nhà phố hiện đại, siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Chủ định cư Mỹ, bán gấp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà rộng!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà rộng thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà rộng thoáng, bán gấp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Siêu Phẩm!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Siêu Vip!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà mới, sạch sẽ, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Mua bán nhanh!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Chủ nhà cần bán gấp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Chủ nhà gấp bán, gảm 200tr!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Bán nhà phố siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Bán nhà phố cực rộng, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Bán nhà phố hiện đại, siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Chủ định cư Mỹ, bán gấp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Nhà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Q7"
-                    , "**Bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán gấp!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Gấp bán!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Gấp bán!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà cực đẹp!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà siêu rộng!!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà rộng!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp thoáng mát!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà rộng thoáng mát!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà rộng thoáng, bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Khu Vip!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Siêu phẩm!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Siêu Phẩm!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Siêu Vip!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà mới, sạch sẽ, thoáng mát!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Mua bán nhanh!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ nhà cần bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ nhà gấp bán, gảm 200tr!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Khu Vip!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà siêu đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán nhà phố siêu đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán nhà phố cực rộng, thoáng mát!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán nhà phố hiện đại, siêu đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ định cư Mỹ, bán gấp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999gia_tỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà rộng!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà rộng thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà rộng thoáng, bán gấp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Siêu Phẩm!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Siêu Vip!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà mới, sạch sẽ, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Mua bán nhanh!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ nhà cần bán gấp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ nhà gấp bán, gảm 200tr!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán nhà phố siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán nhà phố cực rộng, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán nhà phố hiện đại, siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ định cư Mỹ, bán gấp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà rộng!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà rộng thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà rộng thoáng, bán gấp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Siêu Phẩm!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Siêu Vip!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà mới, sạch sẽ, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Mua bán nhanh!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ nhà cần bán gấp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ nhà gấp bán, gảm 200tr!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán nhà phố siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán nhà phố cực rộng, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Bán nhà phố hiện đại, siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ định cư Mỹ, bán gấp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Nhà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
-                    , "**Chủ mua nhà mới, cần bán gấp siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_tỷ, 999kv_, phường 999p_, Quận 7"
+                    "**999gia_T , 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, QUẬN 7, HCM"
+                    , "** 999gia_T , 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, QUẬN 7, HCM"
+                    , "** 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, QUẬN 7, HCM"
+                    , "**b.án gấp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**b.án gấp!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Gấp b.án!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Gấp b.án!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà cực đẹp!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà siêu rộng!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp thoáng mát!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng thoáng mát!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng thoáng, b.án gấp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Siêu phẩm!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Phẩm!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Vip!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Mua b.án nhanh!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Chủ N.hà cần b.án gấp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Chủ N.hà gấp b.án, gảm 200tr!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà siêu đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà phố siêu đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà phố cực rộng, thoáng mát!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà phố hiện đại, siêu đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Chủ định cư , b.án gấp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Chủ mua N.hà mới, cần b.án gấp siêu phẩm!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng thoáng, b.án gấp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Phẩm!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Vip!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Mua b.án nhanh!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Chủ N.hà cần b.án gấp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Chủ N.hà gấp b.án, gảm 200tr!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà phố siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà phố cực rộng, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà phố hiện đại, siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Chủ định cư , b.án gấp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Chủ mua N.hà mới, cần b.án gấp siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng thoáng, b.án gấp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Phẩm!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Vip!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Mua b.án nhanh!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Chủ N.hà cần b.án gấp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Chủ N.hà gấp b.án, gảm 200tr!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà phố siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà phố cực rộng, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà phố hiện đại, siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Chủ định cư , b.án gấp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**Chủ mua N.hà mới, cần b.án gấp siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Q7"
+                    , "**b.án gấp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**b.án gấp!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Gấp b.án!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Gấp b.án!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà cực đẹp!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà siêu rộng!!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp thoáng mát!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng thoáng mát!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng thoáng, b.án gấp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu phẩm!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Phẩm!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Vip!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Mua b.án nhanh!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ N.hà cần b.án gấp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ N.hà gấp b.án, gảm 200tr!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà siêu đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà phố siêu đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà phố cực rộng, thoáng mát!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà phố hiện đại, siêu đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ định cư , b.án gấp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ mua N.hà mới, cần b.án gấp siêu phẩm!, 999gia_T, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng thoáng, b.án gấp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Phẩm!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Vip!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Mua b.án nhanh!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ N.hà cần b.án gấp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ N.hà gấp b.án, gảm 200tr!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà phố siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà phố cực rộng, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà phố hiện đại, siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ định cư , b.án gấp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ mua N.hà mới, cần b.án gấp siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng thoáng, b.án gấp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Phẩm!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Vip!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Mua b.án nhanh!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ N.hà cần b.án gấp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ N.hà gấp b.án, gảm 200tr!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà phố siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà phố cực rộng, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà phố hiện đại, siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ định cư , b.án gấp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
+                    , "**Chủ mua N.hà mới, cần b.án gấp siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_T, 999kv_, phường 999p_, Quận 7"
 
                 ]
 
@@ -492,25 +492,25 @@
                 // var listdt = [
                 //     "-- Dt: 999dt_m2 (999ngang_m x 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
                 //     , "-- Dt: 999dt_M2 (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
-                //     , "-- Kết cấu: 999dt_m2 (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
+                //     , "-- Kc: 999dt_m2 (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
                 //     , "-- Dt: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
-                //     , "-- Kết cấu: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
-                //     , "-- Kết cấu: 999ngang_m * 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
+                //     , "-- Kc: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
+                //     , "-- Kc: 999ngang_m * 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
                 // ]
 
                 var listdt = [
-                    "-- Diện tích: 999dt_m2 (999ngang_m x 999dai_m)."
-                    , "-- Diện tích: 999dt_m2 (999ngang_m ❌ 999dai_m)."
-                    , "-- Diện tích: 999dt_m2 (999ngang_m * 999dai_m)."
-                    , "-- Diện tích: 999dt_m2 (ngang 999ngang_m - dài 999dai_m)."
-                    , "-- Diện tích: 999dt_m2 (rộng 999ngang_m _ dài 999dai_m)."
-                    , "-- Diện tích: 999dt_m2 ( 999ngang_ x 999dai_)."
-                    , "-- Diện tích: 999ngang_m x 999dai_m (999dt_m2)"
-                    , "-- Diện tích: 999ngang_m ❌ 999dai_m (999dt_m2)"
-                    , "-- Diện tích: 999ngang_m * 999dai_m (999dt_m2)"
-                    , "-- Diện tích: ngang 999ngang_m - dài 999dai_m (999dt_m2)"
-                    , "-- Diện tích: rộng 999ngang_m _ dài 999dai_m (999dt_m2)"
-                    , "-- Diện tích:  999ngang_ x 999dai_ (999dt_m2)"
+                    "-- Dt: 999dt_m2 (999ngang_m x 999dai_m)."
+                    , "-- Dt: 999dt_m2 (999ngang_m ❌ 999dai_m)."
+                    , "-- Dt: 999dt_m2 (999ngang_m * 999dai_m)."
+                    , "-- Dt: 999dt_m2 (ngang 999ngang_m - dài 999dai_m)."
+                    , "-- Dt: 999dt_m2 (rộng 999ngang_m _ dài 999dai_m)."
+                    , "-- Dt: 999dt_m2 ( 999ngang_ x 999dai_)."
+                    , "-- Dt: 999ngang_m x 999dai_m (999dt_m2)"
+                    , "-- Dt: 999ngang_m ❌ 999dai_m (999dt_m2)"
+                    , "-- Dt: 999ngang_m * 999dai_m (999dt_m2)"
+                    , "-- Dt: ngang 999ngang_m - dài 999dai_m (999dt_m2)"
+                    , "-- Dt: rộng 999ngang_m _ dài 999dai_m (999dt_m2)"
+                    , "-- Dt:  999ngang_ x 999dai_ (999dt_m2)"
                 ]
                 randomNumber = Math.floor(Math.random() * listdt.length);
                 dt = listdt[randomNumber];
@@ -523,11 +523,11 @@
                 tin += dt;
 
                 var listdt = [
-                    "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, sân thượng"
-                    , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân thượng"
-                    , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân vườn"
-                    , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn"
-                    , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn rộng thoáng"
+                    "-- Kc: 999tang_ tầng, 999pn_ phòng ngủ, sân thượng"
+                    , "-- Kc: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân thượng"
+                    , "-- Kc: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân vườn"
+                    , "-- Kc: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn"
+                    , "-- Kc: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn rộng thoáng"
                 ]
 
 
@@ -565,15 +565,15 @@
                 //---------------------------------------------------------------------------------------------------------------------------------------------------------
                 if (shr) {
                     var listShr = [
-                        '-- Sổ hồng riêng, vuông vức, công chứng ngay.',
-                        '-- Sổ hồng riêng, vuông vức, công chứng sang tên ngay.',
+                        '-- Shr, vuông vức, công chứng ngay.',
+                        '-- Shr, vuông vức, công chứng sang tên ngay.',
                         '-- Sổ hồng chính chủ, sang tên công chứng ngay.',
-                        '-- Sổ hồng riêng đẹp, hoàn công đủ, công chứng ngay',
+                        '-- Shr đẹp, hoàn công đủ, công chứng ngay',
                         '-- SHR, xây đựng đúng giấy phép hoàn công đầy đủ.'
                         , '-- SHR, hoàn công đầy đủ.'
-                        , '-- Sổ sạch, pháp lý chuẩn, công chứng ngay.'
-                        , '-- Sổ đẹp, pháp lý chuẩn.'
-                        , '-- Pháp lý chuẩn, công chứng ngay.'
+                        , '-- Sổ sạch, PL chuẩn, công chứng ngay.'
+                        , '-- Sổ đẹp, PL chuẩn.'
+                        , '-- PL chuẩn, công chứng ngay.'
 
                     ];
                     randomNumber = Math.floor(Math.random() * listShr.length);
@@ -584,13 +584,13 @@
                 tin += "\n";
                 var klistShr = [
                     '☎️0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
-                    , 'LH 0963.569.435 xem nhà và làm việc với chủ'
+                    , 'LH 0963.569.435 xem N.hà và làm việc với chủ'
                     , 'Phone/Zalo: 0963.569.435'
-                    , '☎️ Call/Zalo: 0963.569.435 (xem nhà và làm việc chính chủ)'
+                    , '☎️ Call/Zalo: 0963.569.435 (xem N.hà và làm việc chính chủ)'
                     , '📞 Gọi/zalo: 0963.569.435'
                     , '📞 0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
                     , '☎️ Call 0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
-                    , '📞LH 0963-569-435 xem nhà và làm việc với chủ'
+                    , '📞LH 0963-569-435 xem N.hà và làm việc với chủ'
                 ];
                 randomNumber = Math.floor(Math.random() * klistShr.length);
                 kshr = klistShr[randomNumber];
@@ -617,13 +617,13 @@
                 randomNumber = Math.floor(Math.random() * ind.length);
                 tin = tin.replaceAll("--", ind[randomNumber]);
 
-                tin = tin.replaceAll("phường TT NHÀ BÈ, QUẬN 7", "TT NHÀ BÈ")
-                tin = tin.replaceAll("phường TT NHÀ BÈ, Quận 7", "TT NHÀ BÈ")
-                tin = tin.replaceAll("phường TT NHÀ BÈ, Q7", "TT NHÀ BÈ")
+                tin = tin.replaceAll("phường TT N.hà BÈ, QUẬN 7", "TT N.hà BÈ")
+                tin = tin.replaceAll("phường TT N.hà BÈ, Quận 7", "TT N.hà BÈ")
+                tin = tin.replaceAll("phường TT N.hà BÈ, Q7", "TT N.hà BÈ")
 
-                tin = tin.replaceAll("phường PHÚ XUÂN, Quận 7", "PHÚ XUÂN, TT NHÀ BÈ")
-                tin = tin.replaceAll("phường PHÚ XUÂN, Q7", "PHÚ XUÂN, TT NHÀ BÈ")
-                tin = tin.replaceAll("phường PHÚ XUÂN, QUẬN 7", "PHÚ XUÂN, TT NHÀ BÈ")
+                tin = tin.replaceAll("phường PHÚ XUÂN, Quận 7", "PHÚ XUÂN, TT N.hà BÈ")
+                tin = tin.replaceAll("phường PHÚ XUÂN, Q7", "PHÚ XUÂN, TT N.hà BÈ")
+                tin = tin.replaceAll("phường PHÚ XUÂN, QUẬN 7", "PHÚ XUÂN, TT N.hà BÈ")
 
 
 
