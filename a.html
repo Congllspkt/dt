@@ -1,0 +1,625 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        @media (max-width: 576px) {
+            .custom-control-label {
+                padding-left: 5px;
+            }
+        }
+
+        .short-input {
+            width: 150px;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .radio-container input[type="radio"] {
+            transform: scale(1.5);
+            margin-right: 10px;
+        }
+
+        .label-select-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .label-select-container label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .input-container {
+            display: flex;
+        }
+
+        .input-container .form-control {
+            margin-right: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="checkbox"] {
+            transform: scale(1.5);
+            margin-right: 10px;
+        }
+
+        .bigger-button {
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <br><br>
+            <br><br>
+            <label>Chọn khu vực b.án</label>
+            <div class="label-select-container">
+                <select class="form-control" id="khuvuc" name="dropdownO">
+                </select>
+            </div>
+            <br>
+            <label>Chọn phường</label>
+            <div class="label-select-container">
+                <select class="form-control" id="phuong" name="dropdownO">
+                </select>
+            </div>
+
+            <br>
+            <label>Thông tin căn n.hà</label>
+            <div class="label-select-container">
+                <div class="input-container">
+                    <input type="number" class="form-control short-input" id="dientich" placeholder="Diện tích (M)">
+                    <input type="number" class="form-control short-input" id="gia" placeholder="Giá (t.ỷ)">
+                    <input type="number" class="form-control short-input" id="tang" placeholder="tầng">
+                    <input type="number" class="form-control short-input" id="pn" placeholder="Phòng ngủ">
+                </div>
+            </div>
+            <div class="label-select-container">
+                <div class="input-container">
+                    <input type="number" class="form-control short-input" id="ngang" placeholder="ngang">
+                    <input type="number" class="form-control short-input" id="dai" placeholder="dài">
+                </div>
+            </div>
+            <br>
+            <label>Tiêu chí căn n.hà</label><br>
+            <input type="checkbox" id="hxh" name="check5345box3"><label for="check5345box3">Hẻm xe hơi</label><br>
+            <input type="checkbox" id="shr" name="checwetrtkbox3"><label for="checwetrtkbox3">S.ổ hồng riêng</label><br>
+            <input type="checkbox" id="btct" name="chebxcvckbox3"><label for="chebxcvckbox3">Bê tông cốt
+                thép</label><br>
+            <input type="checkbox" id="trungtam" name="gdfg"><label for="gdfg">Gần quận 1, 4, 8, khu vực xung
+                quanh</label><br>
+            <br>
+
+            <label>khu vực xung quanh</label>
+            <div id="container"></div>
+
+
+            <br>
+            <button class="bigger-button" id="laytin">lấy tin</button>
+            <button class="bigger-button" id="copyButton">Copy tin</button>
+            <br><br>
+            <textarea id="myTextarea" style="width:100%;height: 300px;"></textarea>
+            <br><br>
+            <br><br>
+
+            <p>20s soạn được 1 tin đăng</p>
+            <p>Cách sử dụng</p>
+            <p>+ B1: nhập đầy dủ thông tin về khu vực, phường, diện tích, giá, tầng, số PN, ngang, dài</p>
+            <p>+ B2: Chọn 1 vài tiêu chí như HXH, an ninh,.... và các khu vực lân cận</p>
+            <p>+ B3: nhập thông tin liên hệ, ví dụ: "SDT/ZALO 01233.456.7489", sau khi tạo tin 1 lần, thông tin này sẽ
+                lưu vào máy, lần sau mỡ web không cần nhập lại</p>
+            <p>+ B4: ấn vào "lấy tin" dể tạo tin, ấn nút này lần nữa sẽ ra nhiều tin tương tự cùng nội dung, có thể
+                chỉnh sửa thêm theo ý muốn</p>
+            <p>+ B5: khi kiểm tra tin thấy ok, ấn vào "coppy tin" -> lên facebook và dán vào</p>
+            <p>xong</p>
+
+
+        </div>
+        <script>
+
+
+
+
+
+
+
+
+
+
+
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            const columnData = [
+                [
+                    "Vincom",
+                    "Lotte mart",
+                    "Crescent Mall",
+                    "SC VivoCity",
+                    "BigC",
+                    "bách hóa xanh",
+                    "bệnh viện"
+                ],
+                [
+                    "Đại học RMIT",
+                    "Đại học Tôn Đức Thắng",
+                    "chợ Tân Quy",
+                    "Chợ Tân  Mỹ"
+                    , "Chợ Tân Kiểng"
+                    , "Chợ Lý Phục Man"
+                    , "Phú Mỹ Hưng"
+                    , "Khu Chế Xuất Tân Thuận"
+                ],
+                [
+                    "Lê Văn Lương",
+                    "Lâm Văn Bền",
+                    "Nguyễn Thị Thập",
+                    "Nguyễn Văn Linh",
+                    "Huỳnh Tấn Phát",
+                    "Nguyễn Văn Quỳ"
+                ]
+            ];
+
+            // Function to generate the HTML for a single column
+            function generateColumnHTML(data) {
+                let html = '<div class="column"><div class="radio-container">';
+                data.forEach((item, index) => {
+                    const id = `checkbox${index + 1}`;
+                    html += `<input type="checkbox" id="${id}" name="khuvucxungquanh">
+                 <label for="${id}">${item}</label><br>`;
+                });
+                html += '</div></div>';
+                return html;
+            }
+
+            // Function to generate the entire row HTML
+            function generateRowHTML() {
+                let html = '<div class="row">';
+                columnData.forEach(column => {
+                    html += generateColumnHTML(column);
+                });
+                html += '</div>';
+                return html;
+            }
+
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            const container = document.getElementById('container'); // Assuming there's a container element in your HTML
+            container.innerHTML = generateRowHTML();
+
+            var options = [
+                "LÂM VĂN BỀN",
+                "HOÀNG QUỐC VIỆT",
+                "NGUYỄN THỊ THẬP",
+                "HUỲNH TẤN PHÁT",
+                "TÂN MỸ",
+                "LÊ VĂN LƯƠNG",
+                "NGUYỄN VĂN QUỲ",
+                "BÙI VĂN BA",
+                "NGUYỄN HỮU THỌ",
+                "BẾ VĂN CẤM",
+                "GÒ Ô MÔI",
+                "PHÚ THUẬN",
+                "PHẠM HỮU LẦU",
+                "TRẦN XUÂN SOẠN",
+                "LƯU TRONG LƯ",
+                "HOÀNG TRÔNG MẬU",
+                "TRẦN VĂN KHÁNH",
+                "CAO THỊ CHÍNH",
+                "CHUYÊN DÙNG CHÍNH",
+                "MAI VĂN VĨNH",
+                "LÝ PHỤC MAN",
+                "NGUYỄN ĐỔNG CHI",
+                "PHAN HUY THỰC",
+                "TRẦN TRỌNG CUNG",
+                "ĐÀO TRÍ",
+                "GẦN LOTTEMART",
+                "KDC NAM LONG",
+                "NGAY CHỢ TÂN QUY",
+                "NGAY CHỢ TÂN MỸ"
+                , "GẦN PHÚ MỸ HƯNG"
+                , "GẦN KHU CHẾ XUẤT TÂN THUẬN"
+                , "DƯƠNG CÁT LỢI"
+                , "ĐẶNG NHỮ LÂM"
+                , "HUỲNH THỊ ĐỒNG"
+                , "ĐÀO TÔNG NGUYÊN"
+                , "NGUYỄN BÌNH"
+                , "NGUYỄN THỊ HƯƠNG"
+                , "GẦN QUẬN 1"
+                , "CHỢ TÂN QUY"
+            ];
+
+            options = options.sort();
+
+            var selectElement = $("#khuvuc");
+            $.each(options, function (index, option) {
+                var value = "kv" + (index + 1); // Generate value based on index
+                selectElement.append($("<option>").attr("value", value).text(option));
+            });
+
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            var options = [
+                "TÂN KIỂNG",
+                "TÂN QUY",
+                "TÂN HƯNG",
+                "TÂN PHONG",
+                "TÂN PHÚ",
+                "TÂN THUẬN ĐÔNG",
+                "TÂN THUẬN TÂY",
+                "BÌNH THUẬN",
+                "PHÚ MỸ",
+                "PHÚ XUÂN",
+                "TT N.HÀ BÈ",
+                "PHÚ THUẬN"
+            ];
+
+            var selectElement = $("#phuong");
+            $.each(options, function (index, option) {
+                var value = "phuong" + (index + 1); // Generate value based on index
+                selectElement.append($("<option>").attr("value", value).text(option));
+            });
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            $("#copyButton").click(function () {
+                var textToCopy = $("#myTextarea").val();
+                var tempTextarea = $("<textarea>");
+                tempTextarea.val(textToCopy);
+                $("body").append(tempTextarea);
+                tempTextarea.select();
+                document.execCommand("copy");
+                tempTextarea.remove();
+            });
+            // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            $("#laytin").click(function () {
+                var loainha = $("#dropdown option:selected").text();
+                var khuvuc = $("#khuvuc option:selected").text();
+                var khuvucxungquanh = $("input[name='khuvucxungquanh']:checked").next().text();
+
+                var checkboxes = document.getElementsByName('khuvucxungquanh');
+                var checkedLabels = ['chợ', 'trường học'];
+
+                for (var i = 2; i < checkboxes.length; i++) {
+                    var checkbox = checkboxes[i];
+
+                    if (checkbox.checked) {
+                        var label = checkbox.nextElementSibling;
+                        checkedLabels.push(label.textContent);
+                    }
+                }
+                khuvucxungquanh = checkedLabels.join(", ");
+
+                var phuong = $("#phuong option:selected").text();
+                var dientich = $("#dientich").val();
+                var gia = $("#gia").val();
+                var ngang = $("#ngang").val();
+                var dai = $("#dai").val();
+                var tang = $("#tang").val();
+                var pn = $("#pn").val();
+
+                var hxh = $("#hxh").is(":checked") ? 'hxh' : '';
+                var shr = $("#shr").is(":checked") ? 'shr' : '';
+                var bc = $("#bc").is(":checked") ? 'bc' : '';
+                var btct = $("#btct").is(":checked") ? 'btct' : '';
+                var trungtam = $("#trungtam").is(":checked") ? 'trungtam' : '';
+
+                var tin = '';
+                var randomNumber = 0;
+
+
+                // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                var listtd = [
+                    "**999gia_t.ỷ , 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, QUẬN 7, HCM"
+                    , "** 999gia_t.ỷ , 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, QUẬN 7, HCM"
+                    , "** 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, QUẬN 7, HCM"
+                    , "**B.án gấp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**B.án gấp!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Gấp b.án!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Gấp b.án!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà cực đẹp!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà siêu rộng!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp thoáng mát!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng thoáng mát!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đang ngộp, b.án gấp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Siêu phẩm!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Phẩm, hiếm b.án!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp hiếm b.án!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Vip!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Mua b.án nhanh!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà siêu đẹp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**B.án n.hà phố siêu đẹp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**B.án n.hà phố cực rộng, thoáng mát!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**B.án n.hà phố hiện đại, siêu đẹp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đang ngộp, b.án gấp!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Phẩm, hiếm b.án!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp hiếm b.án!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Vip!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Mua b.án nhanh!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**B.án n.hà phố siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**B.án n.hà phố cực rộng, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**B.án n.hà phố hiện đại, siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà rộng thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đang ngộp, b.án gấp!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Phẩm, hiếm b.án!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà đẹp hiếm b.án!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Siêu Vip!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Mua b.án nhanh!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**N.hà siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**B.án n.hà phố siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**B.án n.hà phố cực rộng, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**B.án n.hà phố hiện đại, siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Q7"
+                    , "**B.án gấp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án gấp!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Gấp b.án!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Gấp b.án!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà cực đẹp!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà siêu rộng!!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp thoáng mát!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng thoáng mát!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đang ngộp, b.án gấp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu phẩm!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Phẩm, hiếm b.án!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp hiếm b.án!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Vip!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Mua b.án nhanh!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà siêu đẹp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án n.hà phố siêu đẹp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án n.hà phố cực rộng, thoáng mát!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án n.hà phố hiện đại, siêu đẹp!, 999gia_t.ỷ, 999dt_m2, 999tang_ tầng, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đang ngộp, b.án gấp!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu phẩm!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Phẩm, hiếm b.án!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp hiếm b.án!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Vip!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Mua b.án nhanh!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án n.hà phố siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án n.hà phố cực rộng, thoáng mát!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án n.hà phố hiện đại, siêu đẹp!, 999dt_m2, 999tang_ tầng, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà rộng thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đang ngộp, b.án gấp!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu phẩm!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Phẩm, hiếm b.án!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà đẹp hiếm b.án!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Siêu Vip!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà mới, sạch sẽ, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Mua b.án nhanh!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**Khu Vip!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**N.hà siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án n.hà phố siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án n.hà phố cực rộng, thoáng mát!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                    , "**B.án n.hà phố hiện đại, siêu đẹp!, 999tang_ tầng, 999dt_m2, 999gia_t.ỷ, 999kv_, phường 999p_, Quận 7"
+                  
+                ]
+
+                randomNumber = Math.floor(Math.random() * listtd.length);
+                td = listtd[randomNumber];
+                td = td.replace("999gia_", gia);
+                td = td.replace("999dt_", dientich);
+                td = td.replace("999tang_", tang);
+                td = td.replace("999kv_", khuvuc);
+                td = td.replace("999p_", phuong);
+                tin += td;
+                tin += "\n";
+
+
+
+                // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                // var listdt = [
+                //     "-- Dt: 999dt_m2 (999ngang_m x 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
+                //     , "-- Dt: 999dt_M2 (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
+                //     , "-- Kết cấu: 999dt_m2 (999ngang_m * 999dai_m), 999tang_ tầng, 999pn_ phòng ngủ."
+                //     , "-- Dt: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
+                //     , "-- Kết cấu: 999ngang_m x 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
+                //     , "-- Kết cấu: 999ngang_m * 999dai_m, 999tang_ tầng, 999pn_ phòng ngủ."
+                // ]
+
+                var listdt = [
+                    "-- Diện tích: 999dt_m2 (999ngang_m x 999dai_m)."
+                    , "-- Diện tích: 999dt_m2 (999ngang_m ❌ 999dai_m)."
+                    , "-- Diện tích: 999dt_m2 (999ngang_m * 999dai_m)."
+                    , "-- Diện tích: 999dt_m2 (ngang 999ngang_m - dài 999dai_m)."
+                    , "-- Diện tích: 999dt_m2 (rộng 999ngang_m _ dài 999dai_m)."
+                    , "-- Diện tích: 999dt_m2 ( 999ngang_ x 999dai_)."
+                    , "-- Diện tích: 999ngang_m x 999dai_m (999dt_m2)"
+                    , "-- Diện tích: 999ngang_m ❌ 999dai_m (999dt_m2)"
+                    , "-- Diện tích: 999ngang_m * 999dai_m (999dt_m2)"
+                    , "-- Diện tích: ngang 999ngang_m - dài 999dai_m (999dt_m2)"
+                    , "-- Diện tích: rộng 999ngang_m _ dài 999dai_m (999dt_m2)"
+                    , "-- Diện tích:  999ngang_ x 999dai_ (999dt_m2)"
+                ]
+                randomNumber = Math.floor(Math.random() * listdt.length);
+                dt = listdt[randomNumber];
+                dt = dt.replace("999dt_", dientich);
+                dt = dt.replace("999ngang_", ngang);
+                dt = dt.replace("999dai_", dai);
+                dt = dt.replace("999tang_", tang);
+                dt = dt.replace("999pn_", pn);
+                tin += "\n";
+                tin += dt;
+
+                var listdt = [
+                    "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, sân thượng"
+                    , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân thượng"
+                    , "-- Kết cấu: 999tang_ tầng, 999pn_ phòng ngủ, phòng khách, bếp, sân vườn"
+                    , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn"
+                    , "-- Kết cấu: 999tang_ tầng, 999pn_ PN, phòng khách, bếp, sân vườn rộng thoáng"
+                ]
+
+
+                randomNumber = Math.floor(Math.random() * listdt.length);
+                dt = listdt[randomNumber];
+                dt = dt.replace("999dt_", dientich);
+                dt = dt.replace("999ngang_", ngang);
+                dt = dt.replace("999dai_", dai);
+                dt = dt.replace("999tang_", tang);
+                dt = dt.replace("999pn_", pn);
+                tin += "\n";
+                tin += dt;
+
+
+
+                if (hxh) {
+                    var listhxh = [
+
+                        '-- Hẻm Xe hơi.',
+                    ];
+                    randomNumber = Math.floor(Math.random() * listhxh.length);
+                    hxh = listhxh[randomNumber];
+                    tin += "\n";
+                    tin += hxh;
+                }
+
+
+                //------------------------------------------------------------------------------------------------------------------------------------------------------
+                tin += "\n";
+                tin += "-- Gần " + khuvucxungquanh;
+
+             
+
+                //---------------------------------------------------------------------------------------------------------------------------------------------------------
+                if (shr) {
+                    var listShr = [
+                        '-- S.ổ hồng riêng, vuông vức, công c.hứng ngay.',
+                        '-- S.ổ hồng riêng, vuông vức, công c.hứng sang tên ngay.',
+                        '-- S.ổ hồng chính chủ, sang tên công c.hứng ngay.',
+                        '-- S.ổ hồng riêng đẹp, hoàn công đủ, công c.hứng ngay',
+                        '-- SHR, xây đựng đúng giấy phép hoàn công đầy đủ.'
+                        , '-- SHR, hoàn công đầy đủ.'
+                        , '-- S.ổ sạch, p.háp lý chuẩn, công c.hứng ngay.'
+                        , '-- S.ổ đẹp, p.háp lý chuẩn.'
+                        , '-- P.háp lý chuẩn, công c.hứng ngay.'
+
+                    ];
+                    randomNumber = Math.floor(Math.random() * listShr.length);
+                    shr = listShr[randomNumber];
+                    tin += "\n";
+                    tin += shr;
+                }
+                tin += "\n";
+                var klistShr = [
+                    '☎️0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
+                    , 'LH 0963.569.435 xem n.hà và làm việc với chủ'
+                    , 'Phone/Zalo: 0963.569.435'
+                    , '☎️ Call/Zalo: 0963.569.435 (xem n.hà và làm việc chính chủ)'
+                    , '📞 Gọi/zalo: 0963.569.435'
+                    , '📞 0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
+                    , '☎️ Call 0️⃣9️⃣6️⃣3️⃣ - 5️⃣6️⃣9️⃣ - 4️⃣3️⃣5️⃣'
+                    , '📞LH 0963-569-435 xem n.hà và làm việc chính chủ'
+                ];
+                randomNumber = Math.floor(Math.random() * klistShr.length);
+                kshr = klistShr[randomNumber];
+                tin += "\n";
+                tin += kshr;
+                tin += "\n";
+
+
+
+
+
+
+                var itd = ['👉', '⭐️⭐️', '⭐️⭐️⭐️', '🔥', '🏠', '📍', '⭐️',
+                    '✨', '✨✨', '🌈', '🏘️', '🏘️🏘️', '🏘️🏘️🏘️',
+                    '💥', '💥💥', '💥💥💥',
+                    '🏡', '❤️', '💥', '☀️', '✈️✈️✈️', '✈️✈️', '✈️']
+                randomNumber = Math.floor(Math.random() * itd.length);
+                tin = tin.replace("**", itd[randomNumber]);
+
+                var ind = ['- ', '👉', '+', '🍀', '✅', '🎉', '✔️', '⚡', '🔹️', '💢',
+                    '🌲', '🧡', "👏", '👌', '🌺', '❤️', '🌟', '💎', '🔥', '✈️', '🌹',
+                    '📍', '♻️', '🔺', '💥', '⭐️', '✨']
+                randomNumber = Math.floor(Math.random() * ind.length);
+                tin = tin.replaceAll("--", ind[randomNumber]);
+
+                tin = tin.replaceAll("phường TT N.HÀ BÈ, QUẬN 7", "TT N.HÀ BÈ")
+                tin = tin.replaceAll("phường TT N.HÀ BÈ, Quận 7", "TT N.HÀ BÈ")
+                tin = tin.replaceAll("phường TT N.HÀ BÈ, Q7", "TT N.HÀ BÈ")
+
+                tin = tin.replaceAll("phường PHÚ XUÂN, Quận 7", "PHÚ XUÂN, TT N.HÀ BÈ")
+                tin = tin.replaceAll("phường PHÚ XUÂN, Q7", "PHÚ XUÂN, TT N.HÀ BÈ")
+                tin = tin.replaceAll("phường PHÚ XUÂN, QUẬN 7", "PHÚ XUÂN, TT N.HÀ BÈ")
+
+
+
+                tin += "\n\n ____________________________________________________ \n\n\n\n\n"
+                tin += $("#myTextarea").val()
+
+                $("#myTextarea").val(tin);
+
+                var jsonData = {
+                    key1: tin
+                };
+
+    // AJAX POST request
+    $.ajax({
+        url: 'https://orange-tigers-bet.loca.lt/', // Replace with your API endpoint
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(jsonData),
+        success: function(response) {
+            console.log("Success:", response);
+        },
+        error: function(xhr, status, error) {
+            console.error("Error:", error);
+        }
+    });
+            });
+        </script>
+</body>
+
+</html>
